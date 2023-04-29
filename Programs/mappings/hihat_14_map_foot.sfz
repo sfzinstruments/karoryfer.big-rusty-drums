@@ -1,0 +1,85 @@
+//Hi-hat map redued to foot chiks, footsplashes and return noises only - cut down for playing with mallets
+//Mallets on this hi-hat don't sound particularly good, and they probably don't on most hi-hats either
+//So when using mallets, a drummer would probably play the hi-hat with the foot pedal only
+//Foot chiks
+
+<master> key=$htchkkey amplitude_cc15=70 locc15=1
+//Never muted, no fadeout time or mute group settings
+pan_cc17=100
+tune_cc18=1200
+ampeg_hold=0.1
+ampeg_decay=0.8
+ampeg_sustain=100
+ampeg_sustain_oncc19=-100
+ampeg_sustain_curvecc19=8
+#include "mappings/hihat_14/ht_chik_cl.sfz"
+
+<master> key=$htchkkey amplitude_cc16=70 locc16=1
+pan_cc17=100
+tune_cc18=1200
+ampeg_hold=0.1
+ampeg_decay=0.8
+ampeg_sustain=100
+ampeg_sustain_oncc19=-100
+ampeg_sustain_curvecc19=8
+#include "mappings/hihat_14/ht_chik_oh.sfz"
+
+//Footsplashes are the only self-muting group
+
+<master> key=$htsplkey amplitude_cc15=70 locc15=1 group=17 off_by=17
+//Hi-hat release time manupulation
+ampeg_release_oncc4=0.2
+ampeg_release_curvecc4=40
+ampeg_release=0.2
+pan_cc17=100
+tune_cc18=1200
+ampeg_hold=0.1
+ampeg_decay=10
+ampeg_sustain=100
+ampeg_sustain_oncc19=-100
+ampeg_sustain_curvecc19=8
+#include "mappings/hihat_14/ht_footspl_cl.sfz"
+
+<master> key=$htsplkey amplitude_cc16=70 locc16=1 group=27 off_by=27
+//Hi-hat release time manupulation
+ampeg_release_oncc4=0.2
+ampeg_release_curvecc4=40
+ampeg_release=0.4
+pan_cc17=100
+tune_cc18=1200
+ampeg_hold=0.1
+ampeg_decay=10
+ampeg_sustain=100
+ampeg_sustain_oncc19=-100
+ampeg_sustain_curvecc19=8
+#include "mappings/hihat_14/ht_footspl_oh.sfz"
+
+//Hi hat pedal return noises, muted by anything else
+
+<master> key=$htretkey amplitude_cc15=100 locc15=1 group=18 off_by=17
+//Hi-hat release time manupulation
+ampeg_release_oncc4=0.2
+ampeg_release_curvecc4=40
+ampeg_release=0.2
+pan_cc17=100
+tune_cc18=1200
+ampeg_hold=0.1
+ampeg_decay=4.5
+ampeg_sustain=100
+ampeg_sustain_oncc19=-100
+ampeg_sustain_curvecc19=8
+#include "mappings/hihat_14/ht_return_cl.sfz"
+
+<master> key=$htretkey amplitude_cc16=100 locc16=1 group=28 off_by=27
+//Hi-hat release time manupulation
+ampeg_release_oncc4=0.2
+ampeg_release_curvecc4=40
+ampeg_release=0.4
+pan_cc17=100
+tune_cc18=1200
+ampeg_hold=0.1
+ampeg_decay=4.5
+ampeg_sustain=100
+ampeg_sustain_oncc19=-100
+ampeg_sustain_curvecc19=8
+#include "mappings/hihat_14/ht_return_oh.sfz"

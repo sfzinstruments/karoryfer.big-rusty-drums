@@ -1,0 +1,148 @@
+//Brush hits on the bow, bell and edge keys
+
+<master>
+key=$crsrdkey
+amplitude_cc116=100
+locc116=1
+locc28=64 hicc28=95
+pan_cc118=100
+tune_cc120=1200
+seq_length=3
+group=110
+off_by=113
+polyphony=5
+ampeg_release=0.3
+ampeg_hold=0.1
+ampeg_decay=3.0
+ampeg_sustain=100
+ampeg_sustain_oncc121=-100
+ampeg_sustain_curvecc121=8
+#include "mappings/crash_sizzle_17/crs_brush_cl.sfz"
+
+<master>
+key=$crsrdkey
+amplitude_cc117=100
+locc117=1
+locc28=64 hicc28=95
+pan_cc118=100
+pan_curvecc118=19
+tune_cc120=1200
+seq_length=3
+group=120
+off_by=123
+polyphony=5
+ampeg_release=0.3
+ampeg_hold=0.1
+ampeg_decay=3.0
+ampeg_sustain=100
+ampeg_sustain_oncc121=-100
+ampeg_sustain_curvecc121=8
+#include "mappings/crash_sizzle_17/crs_brush_oh.sfz"
+
+
+<master>
+key=$crsblkey
+amplitude_cc116=100
+locc116=1
+locc28=64 hicc28=95
+pan_cc118=100
+tune_cc120=1200
+seq_length=3
+group=110
+off_by=113
+polyphony=5
+ampeg_release=0.3
+ampeg_hold=0.1
+ampeg_decay=3.0
+ampeg_sustain=100
+ampeg_sustain_oncc121=-100
+ampeg_sustain_curvecc121=8
+#include "mappings/crash_sizzle_17/crs_brush_cl.sfz"
+
+<master>
+key=$crsblkey
+amplitude_cc117=100
+locc117=1
+locc28=64 hicc28=95
+pan_cc118=100
+pan_curvecc118=19
+tune_cc120=1200
+seq_length=3
+group=120
+off_by=123
+polyphony=5
+ampeg_release=0.3
+ampeg_hold=0.1
+ampeg_decay=3.0
+ampeg_sustain=100
+ampeg_sustain_oncc121=-100
+ampeg_sustain_curvecc121=8
+#include "mappings/crash_sizzle_17/crs_brush_oh.sfz"
+
+<master>
+key=$crscrkey
+amplitude_cc116=100
+locc116=1
+locc28=64 hicc28=95
+pan_cc118=100
+tune_cc120=1200
+seq_length=3
+group=110
+off_by=113
+polyphony=5
+ampeg_release=0.3
+ampeg_hold=0.1
+ampeg_decay=3.0
+ampeg_sustain=100
+ampeg_sustain_oncc121=-100
+ampeg_sustain_curvecc121=8
+#include "mappings/crash_sizzle_17/crs_brush_cl.sfz"
+
+<master>
+key=$crscrkey
+amplitude_cc117=100
+locc117=1
+locc28=64 hicc28=95
+pan_cc118=100
+pan_curvecc118=19
+tune_cc120=1200
+seq_length=3
+group=120
+off_by=123
+polyphony=5
+ampeg_release=0.3
+ampeg_hold=0.1
+ampeg_decay=3.0
+ampeg_sustain=100
+ampeg_sustain_oncc121=-100
+ampeg_sustain_curvecc121=8
+#include "mappings/crash_sizzle_17/crs_brush_oh.sfz"
+
+//Edge chokes
+
+<master>
+key=$crschkey
+amplitude_cc116=20
+locc116=1
+locc28=64 hicc28=95
+pan_cc118=100
+tune_cc120=1200
+ampeg_attack=0.15
+group=113
+//For chokes, make very low velocities quite quiet
+amp_velcurve_1=0.03
+#include "mappings/crash_sizzle_17/crs_choke_cl.sfz"
+
+<master>
+key=$crschkey
+amplitude_cc117=20
+locc117=1
+locc28=64 hicc28=95
+pan_cc118=100
+pan_curvecc118=19
+tune_cc120=1200
+ampeg_attack=0.15
+group=123
+//For chokes, make very low velocities quite quiet
+amp_velcurve_1=0.03
+#include "mappings/crash_sizzle_17/crs_choke_oh.sfz"

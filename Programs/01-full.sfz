@@ -1,0 +1,360 @@
+<control>
+//Key assignments
+#include "keymap/keymap.sfz"
+
+//Hi-hat CC ranges - order for keyboard/sequencing use
+#include "mappings/hihat_14/hihat_cc_ranges_kb.sfz"
+#define $ht_lo_hi_init 127
+//For keyboard/sequencing use, uncomment the above two lines and comment out the below two
+//#include "mappings/hihat_14/hihat_cc_ranges_ekit.sfz"
+//#define $ht_lo_hi_init 0
+
+//Hi-hat controls
+//Hi-hat position on the standard pedal CC
+label_cc4=Hi-hat position
+label_cc15=Hi-hat close
+label_cc16=Hi-hat OH
+label_cc17=Hi-hat pan
+label_cc18=Hi-hat tune
+//Stir controls
+label_cc20=Stir length
+label_cc21=Stir tail
+label_cc22=Stir crossfade
+label_cc23=Stir shape
+//Stick, brush and mallet selections
+label_cc25=Snare sticking
+label_cc26=Tom sticking
+label_cc27=Hi-hat sticking
+label_cc28=Cymbal sticking
+//Tom controls
+label_cc30=22 close
+label_cc31=22 oh
+label_cc32=22 pan
+label_cc33=22 tune
+label_cc34=18 close
+label_cc35=18 oh
+label_cc36=18 pan
+label_cc37=18 tune
+label_cc38=15 close
+label_cc39=15 oh
+label_cc40=15 pan
+label_cc41=15 tune
+label_cc42=14 close
+label_cc43=14 oh
+label_cc44=14 pan
+label_cc45=14 tune
+label_cc46=Lo tom punch
+label_cc47=Hi tom punch
+label_cc48=Tom dirt
+label_cc49=Tom deaden
+//Kick controls
+label_cc70=Kick mic
+label_cc71=Kick OH
+label_cc72=Kick dirt
+label_cc74=Kick punch
+label_cc75=Kick tune
+label_cc76=Kick deaden
+label_cc77=Low cut
+//Snare controls
+label_cc80=Snare bottom
+label_cc81=Snare top
+label_cc82=Snare OH
+label_cc83=Snare snap
+label_cc84=Snare punch
+label_cc85=Snare epic
+label_cc88=Snare pan
+label_cc89=Snare tune
+label_cc90=Snare deaden
+//Mechanical noise controls
+label_cc92=Mech close
+label_cc93=Mech OH
+label_cc94=Mech tune
+//Percussive click controls
+label_cc95=Click close
+label_cc96=Click OH
+label_cc97=Click snare btm
+label_cc98=Click tune
+//Cymbal controls
+label_cc100=Crash close
+label_cc101=Crash OH
+label_cc102=Crash pan
+label_cc103=Crash tune
+label_cc104=Ride close
+label_cc105=Ride OH
+label_cc106=Ride pan
+label_cc107=Ride tune
+label_cc108=China close
+label_cc109=China OH
+label_cc110=China pan
+label_cc111=China tune
+label_cc112=Sizzle ride close
+label_cc113=Sizzle ride OH
+label_cc114=Sizzle ride pan
+label_cc115=Sizzle ride tune
+label_cc116=Sizzle crash close
+label_cc117=Sizzle crash OH
+label_cc118=Sizzle crash pan
+label_cc119=Sizzle crash tune
+label_cc124=Stack close
+label_cc125=Stack OH
+label_cc126=Stack pan
+label_cc127=Stack tune
+//Effects
+label_cc400=Limiter thresh
+label_cc401=Limiter level
+
+//Hi-hat
+set_cc4=$ht_lo_hi_init
+set_cc15=100
+set_cc16=100
+set_cc17=63
+set_cc18=63
+//Stirs
+set_cc20=30
+set_cc21=40
+set_cc22=70
+set_cc23=64
+//Toms
+set_cc30=100
+set_cc31=70
+set_cc32=107
+set_cc33=63
+set_cc34=100
+set_cc35=70
+set_cc36=87
+set_cc37=63
+set_cc38=100
+set_cc39=70
+set_cc40=40
+set_cc41=63
+set_cc42=100
+set_cc43=70
+set_cc44=20
+set_cc45=63
+//Kick
+set_cc70=100
+set_cc75=63
+//Snare
+set_cc80=100
+set_cc81=40
+set_cc82=60
+set_cc88=63
+set_cc89=63
+//Mechanical noises
+set_cc92=100
+set_cc93=60
+set_cc94=63
+//Percussive clicks
+set_cc95=100
+set_cc96=70
+set_cc97=40
+set_cc98=63
+//Cymbals
+set_cc100=40
+set_cc101=100
+set_cc102=30
+set_cc103=63
+set_cc104=40
+set_cc105=100
+set_cc106=97
+set_cc107=63
+set_cc108=40
+set_cc109=100
+set_cc110=50
+set_cc111=63
+set_cc112=40
+set_cc113=100
+set_cc114=77
+set_cc115=63
+set_cc116=40
+set_cc117=100
+set_cc118=53
+set_cc119=63
+set_cc124=40
+set_cc125=100
+set_cc126=73
+set_cc127=63
+//Effects
+set_cc400=63
+set_cc401=63
+
+<global> loop_mode=one_shot
+seq_length=4
+off_mode=normal
+ampeg_release=0.01
+bend_down=1200
+bend_up=1200
+//The non-kick low cut
+eq1_freq=50
+eq1_bw=4
+eq1_gain_oncc77=-18
+//Default tune and pan curves
+pan_curvecc17=9
+tune_curvecc18=9
+pan_curvecc32=9
+tune_curvecc33=9
+pan_curvecc36=9
+tune_curvecc37=9
+pan_curvecc40=9
+tune_curvecc41=9
+pan_curvecc44=9
+tune_curvecc45=9
+tune_curvecc75=9
+pan_curvecc88=9
+tune_curvecc89=9
+tune_curvecc94=9
+tune_curvecc98=10
+pan_curvecc102=9
+tune_curvecc103=9
+pan_curvecc106=9
+tune_curvecc107=9
+pan_curvecc110=9
+tune_curvecc111=9
+pan_curvecc114=9
+tune_curvecc115=9
+pan_curvecc118=9
+tune_curvecc119=9
+pan_curvecc126=9
+tune_curvecc127=9
+//Make the bottom velocity layer not quite so whisper-quiet at the bottom
+amp_velcurve_1=0.4
+
+//Mechanical pedal noises
+#include "mappings/kick_24_map_mech.sfz"
+#include "mappings/hihat_14_map_mech.sfz"
+
+//Kick
+#include "mappings/kick_24_map.sfz"
+#include "mappings/kick_24_nodamp_map.sfz"
+
+//Snare
+//Articulations selectable by the sticking control
+#include "mappings/snare_14_map.sfz"
+#include "mappings/snare_14_map_tall.sfz"
+#include "mappings/snare_14_map_prep.sfz"
+#include "mappings/snare_14_map_brush.sfz"
+#include "mappings/snare_14_map_mallet.sfz"
+//Sticking-independent articulations
+#include "mappings/snare_14_map_sidestick.sfz"
+#include "mappings/snare_14_map_dig.sfz"
+#include "mappings/snare_14_map_release.sfz"
+//Stirs
+<master>
+hicc23=41
+offset_random=12345
+ampeg_attack_shape=0.0
+ampeg_decay_shape=0.0
+//Make the bottom velocity layer not quite so whisper-quiet at the bottom
+amp_velcurve_1=0.1
+#include "mappings/snare_14_map_stir.sfz"
+<master>
+locc23=42
+hicc23=84
+offset_random=12345
+ampeg_attack_shape=3.5
+ampeg_decay_shape=-1.4
+//Make the bottom velocity layer not quite so whisper-quiet at the bottom
+amp_velcurve_1=0.1
+#include "mappings/snare_14_map_stir.sfz"
+<master>
+locc23=85
+offset_random=12345
+ampeg_attack_shape=5.2
+ampeg_decay_shape=-3.5
+//Make the bottom velocity layer not quite so whisper-quiet at the bottom
+amp_velcurve_1=0.1
+#include "mappings/snare_14_map_stir.sfz"
+#include "mappings/sn_stir_mute_groups.sfz"
+
+//Hi-hat
+#include "mappings/hihat_14_map.sfz"
+#include "mappings/hihat_14_map_brush.sfz"
+#include "mappings/hihat_14_map_foot.sfz"
+//Hat mute silence groups
+<master> seq_length=1
+#include "mappings/hihat_14/hmuteg_cl.sfz"
+#include "mappings/hihat_14/hmuteg_oh.sfz"
+
+//Toms
+#include "mappings/tom_22_map.sfz"
+#include "mappings/tom_18_map.sfz"
+#include "mappings/tom_15_map.sfz"
+#include "mappings/tom_14_map.sfz"
+#include "mappings/tom_22_map_brush.sfz"
+#include "mappings/tom_18_map_brush.sfz"
+#include "mappings/tom_18_map_digs.sfz"
+#include "mappings/tom_18_map_release.sfz"
+#include "mappings/tom_15_map_brush.sfz"
+#include "mappings/tom_14_map_brush.sfz"
+#include "mappings/tom_14_map_mallet.sfz"
+#include "mappings/tom_15_map_mallet.sfz"
+#include "mappings/tom_18_map_mallet.sfz"
+#include "mappings/tom_22_map_mallet.sfz"
+
+<master>
+hicc23=41
+offset_random=12345
+ampeg_attack_shape=0.0
+ampeg_decay_shape=0.0
+//Make the bottom velocity layer not quite so whisper-quiet at the bottom
+amp_velcurve_1=0.1
+#include "mappings/tom_18_map_stir.sfz"
+<master>
+locc23=42
+hicc23=84
+offset_random=12345
+ampeg_attack_shape=3.5
+ampeg_decay_shape=-1.4
+//Make the bottom velocity layer not quite so whisper-quiet at the bottom
+amp_velcurve_1=0.1
+#include "mappings/tom_18_map_stir.sfz"
+<master>
+locc23=85
+offset_random=12345
+ampeg_attack_shape=5.2
+ampeg_decay_shape=-3.5
+//Make the bottom velocity layer not quite so whisper-quiet at the bottom
+amp_velcurve_1=0.1
+#include "mappings/tom_18_map_stir.sfz"
+#include "mappings/t18_stir_mute_groups.sfz"
+
+//Cymbals
+#include "mappings/ride_22_map.sfz"
+#include "mappings/crash_17_map.sfz"
+#include "mappings/china_18_map.sfz"
+#include "mappings/ride_sizzle_19_map.sfz"
+#include "mappings/crash_sizzle_17_map.sfz"
+#include "mappings/stack_3_layer_map.sfz"
+#include "mappings/ride_22_map_brush.sfz"
+#include "mappings/crash_17_map_brush.sfz"
+#include "mappings/china_18_map_brush.sfz"
+#include "mappings/ride_sizzle_19_map_brush.sfz"
+#include "mappings/crash_sizzle_17_map_brush.sfz"
+#include "mappings/ride_22_map_mallet.sfz"
+#include "mappings/crash_17_map_mallet.sfz"
+#include "mappings/china_18_map_mallet.sfz"
+#include "mappings/ride_sizzle_19_map_mallet.sfz"
+#include "mappings/crash_sizzle_17_map_mallet.sfz"
+
+//Percussive clicks
+#include "mappings/kick_24_map_perc.sfz"
+#include "mappings/snare_14_map_perc.sfz"
+#include "mappings/hihat_14_map_perc.sfz"
+#include "mappings/tom_22_map_perc.sfz"
+#include "mappings/tom_18_map_perc.sfz"
+#include "mappings/tom_15_map_perc.sfz"
+#include "mappings/tom_14_map_perc.sfz"
+
+<effect>
+param_offset=400
+type=com.mda.Limiter
+
+//Curves
+#include "mappings/curves/mute_curves.sfz"
+#include "mappings/curves/tune_curve.sfz"
+#include "mappings/curves/tune_perc_curve.sfz"
+#include "mappings/curves/cym_pan_curves.sfz"
+#include "mappings/curves/tom_pan_curves.sfz"
+//One of the below two lines should be commented out
+#include "mappings/curves/hh_kb_vol_curves.sfz"
+//#include "mappings/curves/hh_ekit_vol_curves.sfz"

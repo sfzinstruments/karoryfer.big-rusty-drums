@@ -1,0 +1,68 @@
+//Regular hits
+
+<master>
+key=$crcrkey
+amplitude_cc100=70
+locc100=1
+hicc28=63
+pan_cc102=100
+tune_cc120=1200
+group=50
+off_by=51
+polyphony=4
+ampeg_release=0.3
+ampeg_hold=0.1
+ampeg_decay=7.0
+ampeg_sustain=100
+ampeg_sustain_oncc121=-100
+ampeg_sustain_curvecc121=8
+#include "mappings/crash_17/cr_cl.sfz"
+
+<master>
+key=$crcrkey
+amplitude_cc101=70
+locc101=1
+hicc28=63
+pan_cc102=100
+pan_curvecc102=16
+tune_cc120=1200
+group=60
+off_by=61
+polyphony=4
+ampeg_release=0.3
+ampeg_hold=0.1
+ampeg_decay=7.0
+ampeg_sustain=100
+ampeg_sustain_oncc121=-100
+ampeg_sustain_curvecc121=8
+#include "mappings/crash_17/cr_oh.sfz"
+
+
+//Edge chokes
+
+<master>
+key=$crchkey
+amplitude_cc100=30
+locc100=1
+hicc28=63
+pan_cc102=100
+tune_cc120=1200
+ampeg_attack=0.15
+group=51
+//For chokes, make very low velocities quite quiet
+amp_velcurve_1=0.03
+#include "mappings/crash_17/cr_choke_cl.sfz"
+
+<master>
+key=$crchkey
+amplitude_cc101=30
+locc101=1
+hicc28=63
+pan_cc102=100
+pan_curvecc102=16
+tune_cc120=1200
+ampeg_attack=0.15
+group=61
+//For chokes, make very low velocities quite quiet
+amp_velcurve_1=0.03
+#include "mappings/crash_17/cr_choke_oh.sfz"

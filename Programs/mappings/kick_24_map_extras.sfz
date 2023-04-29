@@ -1,0 +1,80 @@
+//Rim or hoop clicks
+
+<master>
+key=$krckey
+amplitude_cc70=100
+//Make the bottom velocity layer not quite so whisper-quiet at the bottom
+amp_velcurve_1=0.2
+#include "mappings/kick_24/k_rc_cl.sfz"
+
+<master>
+key=$krckey
+amplitude_cc71=100
+//Make the bottom velocity layer not quite so whisper-quiet at the bottom
+amp_velcurve_1=0.2
+#include "mappings/kick_24/k_rc_oh.sfz"
+
+//Shell clicks
+
+<master>
+key=$ksckey
+amplitude_cc70=100
+//Make the bottom velocity layer not quite so whisper-quiet at the bottom
+amp_velcurve_1=0.2
+#include "mappings/kick_24/k_sc_cl.sfz"
+
+<master>
+key=$ksckey
+amplitude_cc71=100
+//Make the bottom velocity layer not quite so whisper-quiet at the bottom
+amp_velcurve_1=0.2
+#include "mappings/kick_24/k_sc_oh.sfz"
+
+
+//Tomholder clicks
+
+<master>
+key=$ktckey
+amplitude_cc70=100
+//Make the bottom velocity layer not quite so whisper-quiet at the bottom
+amp_velcurve_1=0.2
+#include "mappings/kick_24/k_tc_cl.sfz"
+
+<master>
+key=$ktckey
+amplitude_cc71=100
+//Make the bottom velocity layer not quite so whisper-quiet at the bottom
+amp_velcurve_1=0.2
+#include "mappings/kick_24/k_tc_oh.sfz"
+
+//Pedal hits
+
+<master>
+key=$kphkey
+amplitude_cc70=100
+//Make the bottom velocity layer not quite so whisper-quiet at the bottom
+amp_velcurve_1=0.1
+#include "mappings/kick_24/k_phit_cl.sfz"
+
+<master>
+key=$kphkey
+amplitude_cc71=100
+//Make the bottom velocity layer not quite so whisper-quiet at the bottom
+amp_velcurve_1=0.1
+#include "mappings/kick_24/k_phit_oh.sfz"
+
+//Pedal returns
+
+<master>
+key=$kprkey
+amplitude_cc70=100
+//Make the bottom velocity layer not quite so whisper-quiet at the bottom
+amp_velcurve_1=0.1
+#include "mappings/kick_24/k_preturn_cl.sfz"
+
+<master>
+key=$kprkey
+amplitude_cc71=100
+//Make the bottom velocity layer not quite so whisper-quiet at the bottom
+amp_velcurve_1=0.1
+#include "mappings/kick_24/k_preturn_oh.sfz"

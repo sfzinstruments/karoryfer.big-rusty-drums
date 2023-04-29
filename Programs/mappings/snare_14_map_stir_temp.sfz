@@ -1,0 +1,52 @@
+//Flutter top layer
+
+<group>
+key=$snflkey
+amplitude_cc80=100
+locc80=1
+pan_cc88=100
+tune_cc89=1200
+ampeg_sustain=0
+delay_cc20=0.5
+ampeg_attackcc20=0.5
+ampeg_decaycc21=1
+ampeg_releasecc22=0.5
+group=94
+off_by=94
+
+#include "mappings/snare_14/sn_flutter_btm.sfz"
+
+<group>
+key=$snflkey
+amplitude_cc81=100
+locc81=1
+pan_cc88=100
+tune_cc89=1200
+ampeg_sustain=0
+delay_cc20=0.5
+ampeg_attackcc20=0.5
+ampeg_decaycc21=1
+ampeg_releasecc22=0.5
+group=95
+off_by=95
+
+#include "mappings/snare_14/sn_flutter_top.sfz"
+
+
+<group>
+key=$snflkey
+amplitude_cc82=100
+locc82=1
+pan_cc88=100
+tune_cc89=1200
+ampeg_sustain=0
+delay_cc20=0.5
+ampeg_attackcc20=0.5
+ampeg_decaycc21=1
+ampeg_releasecc22=0.5
+lovel=40
+amp_velcurve_39=0
+group=96
+off_by=96
+
+#include "mappings/snare_14/sn_flutter_oh.sfz"

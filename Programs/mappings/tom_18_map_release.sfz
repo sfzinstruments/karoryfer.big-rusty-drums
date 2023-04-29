@@ -1,0 +1,14 @@
+//Brush releases
+<master>
+key=$t18relkey
+amplitude_cc34=100
+tune_cc37=1200
+pan_cc36=100
+#include "mappings/tom_18/tom_18_brelease_cl.sfz"
+
+<master>
+key=$t18relkey
+amplitude_cc35=100
+tune_cc37=1200
+pan_cc36=100
+#include "mappings/tom_18/tom_18_brelease_oh.sfz"

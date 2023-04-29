@@ -1,0 +1,7 @@
+//The curve for the perc tune controls
+//Asymmetrical so tuning will be one octave down, two octaves up
+
+<curve>curve_index=10
+v000=-0.5
+v063=0
+v127=1

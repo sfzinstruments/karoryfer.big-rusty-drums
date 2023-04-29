@@ -1,0 +1,39 @@
+//Pedal hits
+
+<master>
+key=$kphkey
+amplitude_cc92=20
+locc92=1
+tune_cc94=2400
+//Make the bottom velocity layer not quite so whisper-quiet at the bottom
+amp_velcurve_1=0.1
+#include "mappings/kick_24/k_phit_cl.sfz"
+
+<master>
+key=$kphkey
+amplitude_cc93=20
+locc93=1
+tune_cc94=2400
+//Make the bottom velocity layer not quite so whisper-quiet at the bottom
+amp_velcurve_1=0.1
+#include "mappings/kick_24/k_phit_oh.sfz"
+
+//Pedal returns
+
+<master>
+key=$kprkey
+amplitude_cc92=20
+locc92=1
+tune_cc94=2400
+//Make the bottom velocity layer not quite so whisper-quiet at the bottom
+amp_velcurve_1=0.1
+#include "mappings/kick_24/k_preturn_cl.sfz"
+
+<master>
+key=$kprkey
+amplitude_cc93=20
+locc93=1
+tune_cc94=2400
+//Make the bottom velocity layer not quite so whisper-quiet at the bottom
+amp_velcurve_1=0.1
+#include "mappings/kick_24/k_preturn_oh.sfz"

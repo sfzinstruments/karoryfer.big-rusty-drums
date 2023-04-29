@@ -1,0 +1,19 @@
+<master>
+seq_length=1
+<group>
+key=$stmkey
+sample=*silence
+loop_mode=loop_continuous off_mode=fast
+ampeg_attack=0 ampeg_decay=0 ampeg_sustain=0 ampeg_release=0
+<region>
+group=97
+off_by=97
+<region>
+group=98
+off_by=98
+<region>
+group=99
+off_by=99
+<region>
+group=100
+off_by=100

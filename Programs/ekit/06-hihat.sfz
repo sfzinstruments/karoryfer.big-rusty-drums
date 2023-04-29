@@ -1,0 +1,70 @@
+<control>
+//Key assignments
+#include "keymap/keymap.sfz"
+
+//Hi-hat CC ranges - order for keyboard/sequencing use
+//#include "mappings/hihat_14/hihat_cc_ranges_kb.sfz"
+//#define $ht_lo_hi_init 127
+//For keyboard/sequencing use, uncomment the above two lines and comment out the below two
+#include "mappings/hihat_14/hihat_cc_ranges_ekit.sfz"
+#define $ht_lo_hi_init 0
+
+//Stick, brush and mallet selections
+label_cc27=Hi-hat sticking
+//Kick controls
+label_cc77=Low cut
+//Hi-hat controls
+//Hi-hat position on the standard pedal CC
+label_cc4=Hi-hat position
+label_cc15=Hi-hat close
+label_cc16=Hi-hat OH
+label_cc17=Hi-hat pan
+label_cc18=Hi-hat tune
+//Effects
+label_cc400=Limiter thresh
+label_cc401=Limiter level
+
+//Hi-hat
+set_cc4=$ht_lo_hi_init
+set_cc15=100
+set_cc16=100
+set_cc17=63
+set_cc18=63
+//Effects
+set_cc400=63
+set_cc401=63
+
+<global> loop_mode=one_shot
+seq_length=4
+off_mode=normal
+bend_down=1200
+bend_up=1200
+//The non-kick low cut
+eq1_freq=50
+eq1_bw=4
+eq1_gain_oncc77=-18
+//Default tune and pan curves
+pan_curvecc17=9
+tune_curvecc18=9
+//Make the bottom velocity layer not quite so whisper-quiet at the bottom
+amp_velcurve_1=0.4
+
+//Hi-hat
+#include "mappings/hihat_14_map.sfz"
+#include "mappings/hihat_14_map_brush.sfz"
+#include "mappings/hihat_14_map_foot.sfz"
+//Hat mute silence groups
+<master> seq_length=1
+#include "mappings/hihat_14/hmuteg_cl.sfz"
+#include "mappings/hihat_14/hmuteg_oh.sfz"
+
+<effect>
+param_offset=400
+type=com.mda.Limiter
+
+//Curves
+#include "mappings/curves/mute_curves.sfz"
+#include "mappings/curves/tune_curve.sfz"
+//One of the below two lines should be commented out
+//#include "mappings/curves/hh_kb_vol_curves.sfz"
+#include "mappings/curves/hh_ekit_vol_curves.sfz"

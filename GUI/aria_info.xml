@@ -1,0 +1,11 @@
+<GUI w="773" h="335"  >
+
+	<StaticImage  x="0" y="0" w="773" h="335"  image="info_tab.png"  />
+
+	<CommandButton command="launch_url"    data0="http://www.karoryfer.com/"  x="5" y="255" w="78" h="70" image="btn_url.png"   />
+
+
+
+
+	
+</GUI>

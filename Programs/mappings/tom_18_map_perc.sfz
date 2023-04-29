@@ -1,0 +1,48 @@
+//Rim clicks
+
+<master>
+key=$t18rckey
+amplitude_cc95=100
+locc95=1
+pan_cc36=100
+pan_curvecc36=9
+tune_cc98=2400
+//Make the bottom velocity layer not quite so whisper-quiet at the bottom
+amp_velcurve_1=0.2
+#include "mappings/tom_18/tom_18_rc_cl.sfz"
+
+<master>
+key=$t18rckey
+amplitude_cc96=100
+locc96=1
+pan_cc36=100
+pan_curvecc36=12
+tune_cc98=2400
+//Make the bottom velocity layer not quite so whisper-quiet at the bottom
+amp_velcurve_1=0.2
+#include "mappings/tom_18/tom_18_rc_oh.sfz"
+
+
+//Shell clicks
+
+<master>
+key=$t18sckey
+amplitude_cc95=100
+locc95=1
+pan_cc36=100
+pan_curvecc36=9
+tune_cc98=2400
+//Make the bottom velocity layer not quite so whisper-quiet at the bottom
+amp_velcurve_1=0.2
+#include "mappings/tom_18/tom_18_sc_cl.sfz"
+
+<master>
+key=$t18sckey
+amplitude_cc96=100
+locc96=1
+pan_cc36=100
+pan_curvecc36=12
+tune_cc98=2400
+//Make the bottom velocity layer not quite so whisper-quiet at the bottom
+amp_velcurve_1=0.2
+#include "mappings/tom_18/tom_18_sc_oh.sfz"

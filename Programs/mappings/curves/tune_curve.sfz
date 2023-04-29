@@ -1,0 +1,7 @@
+//The curve for all the tune controls except perc and mech
+//Also used for snare and hi-hat pan
+
+<curve>curve_index=9
+v000=-1
+v063=0
+v127=1

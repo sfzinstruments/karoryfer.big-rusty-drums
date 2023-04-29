@@ -1,0 +1,23 @@
+//Snare brush releases
+
+<master>
+key=$snrelkey
+amplitude_cc80=100
+tune_cc89=1200
+pan_cc88=100
+#include "mappings/snare_14/sn_brelease_btm.sfz"
+
+<master>
+key=$snrelkey
+amplitude_cc81=100
+tune_cc89=1200
+pan_cc88=100
+#include "mappings/snare_14/sn_brelease_top.sfz"
+
+<master>
+key=$snrelkey
+amplitude_cc82=100
+tune_cc89=1200
+pan_cc88=100
+#include "mappings/snare_14/sn_brelease_oh.sfz"
+

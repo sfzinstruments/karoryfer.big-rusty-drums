@@ -1,0 +1,17 @@
+
+<group>
+
+<region>
+sample=../Samples/china_18/choke/cl/cn_choke_rr1.flac
+
+<region>
+sample=../Samples/china_18/choke/cl/cn_choke_rr2.flac
+seq_position=2
+
+<region>
+sample=../Samples/china_18/choke/cl/cn_choke_rr3.flac
+seq_position=3
+
+<region>
+sample=../Samples/china_18/choke/cl/cn_choke_rr4.flac
+seq_position=4

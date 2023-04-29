@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<Key>8279CC9E61FCF423AEB2E4646B5BB7A303E4C9FFAB847EEAA9C4478C38208936AB94CFF6CEC60AFD462928F9B52A48FE9DF4C9C37EE9CA9853525BD75EDA1A2EFAD250B890C37E8A7B97363E5280EFB19396678128F05C634C9296B7834959AA02AB017402FF39E840E645C030FA08F586A624EE5BDEB52C26765EE6FFB74ACFFE4C97FE7121E4960AED231491FC62527FC26D5C3E54A31C6CFDB14226613B820D4DE1CF461AE4BD0B559CF2958FD220C13430D8E1621D10C87BC3B7A2B63F1DEF9D10C7FC96278652DAAFF74CFB6731308D875E61AD72DE51F9DC00B34802EADF2BFE4C061F9255EFC2CB458A793F8A7E09C7E0ECCCDABC956483A7F56A9865</Key>
+<AriaBank id="2523" name="Big Rusty Drums" vendor="Karoryfer" product="Big Rusty Drums" version="1000" >
+
+	<Define name="$sample_dir" value="../Samples"/>
+	
+	<!-- branding for Aria Player and sforzando UIs -->
+	<AriaGUI path="GUI/aria_info.xml"  target="*ARIA_INFO" />	
+ 
+	<AriaProgram  name="01-Full kit"            gui="GUI/01-full.xml">     <AriaElement  path="Programs/01-full.sfz"/>    </AriaProgram>
+	<AriaProgram  name="02-Basic kit"           gui="GUI/02-basic.xml">    <AriaElement  path="Programs/02-basic.sfz"/>   </AriaProgram>
+	<AriaProgram  name="03-Kick bus"     		gui="GUI/03-kick.xml" >    <AriaElement  path="Programs/03-kick.sfz"/>    </AriaProgram>
+	<AriaProgram  name="04-Snare bus"     	    gui="GUI/04-snare.xml" >   <AriaElement  path="Programs/04-snare.sfz"/>   </AriaProgram>
+	<AriaProgram  name="05-Tom bus"             gui="GUI/05-toms.xml" >    <AriaElement  path="Programs/05-toms.sfz"/>    </AriaProgram>
+	<AriaProgram  name="06-Hi-hat bus"     		gui="GUI/06-hihat.xml" >   <AriaElement  path="Programs/06-hihat.sfz"/>   </AriaProgram>
+	<AriaProgram  name="07-Cymbal bus"     		gui="GUI/07-cymbals.xml" > <AriaElement  path="Programs/07-cymbals.sfz"/> </AriaProgram>
+	<AriaProgram  name="08-Noise and click bus" gui="GUI/08-noises.xml" >  <AriaElement  path="Programs/08-noises.sfz"/>  </AriaProgram>
+
+</AriaBank>

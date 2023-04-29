@@ -1,0 +1,95 @@
+<control>
+//Key assignments
+#include "keymap/keymap.sfz"
+
+//Tom controls
+label_cc32=22 pan
+label_cc36=18 pan
+label_cc40=15 pan
+label_cc44=14 pan
+//Kick controls
+label_cc77=Low cut
+//Snare controls
+label_cc88=Snare pan
+//Mechanical noise controls
+label_cc92=Mech close
+label_cc93=Mech OH
+label_cc94=Mech tune
+//Percussive click controls
+label_cc95=Perc close
+label_cc96=Perc OH
+label_cc97=Perc snare btm
+label_cc98=Perc tune
+//Hi-hat controls
+label_cc102=Hi-hat pan
+//Effects
+label_cc400=Limiter thresh
+label_cc401=Limiter level
+
+
+//Toms
+set_cc32=107
+set_cc36=87
+set_cc40=40
+set_cc44=20
+//Snare
+set_cc88=63
+//Mechanical noises
+set_cc92=100
+set_cc93=60
+set_cc94=63
+//Percussive clicks
+set_cc95=100
+set_cc96=70
+set_cc97=40
+set_cc98=63
+//Hi-hat
+set_cc102=63
+//Effects
+set_cc400=63
+set_cc401=63
+
+<global> loop_mode=one_shot
+seq_length=4
+off_mode=normal
+ampeg_release=0.01
+bend_down=1200
+bend_up=1200
+//The non-kick low cut
+eq1_freq=50
+eq1_bw=4
+eq1_gain_oncc77=-18
+//Default tune and pan curves
+pan_curvecc32=9
+pan_curvecc36=9
+pan_curvecc40=9
+pan_curvecc44=9
+pan_curvecc88=9
+tune_curvecc94=9
+tune_curvecc98=10
+pan_curvecc102=9
+//Make the bottom velocity layer not quite so whisper-quiet at the bottom
+amp_velcurve_1=0.4
+
+//Mechanical pedal noises
+#include "mappings/kick_24_map_mech.sfz"
+#include "mappings/hihat_14_map_mech.sfz"
+
+//Percussive clicks
+#include "mappings/kick_24_map_perc.sfz"
+#include "mappings/snare_14_map_perc.sfz"
+#include "mappings/hihat_14_map_perc.sfz"
+#include "mappings/tom_22_map_perc.sfz"
+#include "mappings/tom_18_map_perc.sfz"
+#include "mappings/tom_15_map_perc.sfz"
+#include "mappings/tom_14_map_perc.sfz"
+
+<effect>
+param_offset=400
+type=com.mda.Limiter
+
+//Curves
+#include "mappings/curves/tune_curve.sfz"
+#include "mappings/curves/tune_perc_curve.sfz"
+#include "mappings/curves/cym_pan_curves.sfz"
+#include "mappings/curves/tom_pan_curves.sfz"

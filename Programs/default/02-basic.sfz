@@ -1,0 +1,171 @@
+<control>
+//Key assignments
+#include "keymap/keymap.sfz"
+
+//Hi-hat CC ranges - order for keyboard/sequencing use
+#include "mappings/hihat_14/hihat_cc_ranges_kb.sfz"
+#define $ht_lo_hi_init 127
+//For e-kit use, comment out the above two lines and uncomment the below two
+//#include "mappings/hihat_14/hihat_cc_ranges_ekit.sfz"
+//#define $ht_lo_hi_init 0
+
+//Hi-hat controls
+//Hi-hat position on the standard pedal CC
+label_cc4=Hi-hat position
+label_cc15=Hi-hat close
+label_cc16=Hi-hat OH
+label_cc17=Hi-hat pan
+label_cc18=Hi-hat tune
+label_cc19=Hi-hat dryness
+//Tom controls
+label_cc34=18 close
+label_cc35=18 oh
+label_cc36=18 pan
+label_cc37=18 tune
+label_cc38=15 close
+label_cc39=15 oh
+label_cc40=15 pan
+label_cc41=15 tune
+label_cc42=14 close
+label_cc43=14 oh
+label_cc44=14 pan
+label_cc45=14 tune
+label_cc46=Lo tom punch
+label_cc47=Hi tom punch
+label_cc48=Tom dirt
+label_cc49=Tom deaden
+//Kick controls
+label_cc70=Kick mic
+label_cc71=Kick OH
+label_cc72=Kick buzz
+label_cc74=Kick punch
+label_cc75=Kick tune
+label_cc76=Kick deaden
+label_cc77=Low cut
+//Snare controls
+label_cc80=Snare bottom
+label_cc81=Snare top
+label_cc82=Snare OH
+label_cc83=Snare snap
+label_cc84=Snare punch
+label_cc85=Snare epic
+label_cc88=Snare pan
+label_cc89=Snare tune
+label_cc90=Snare deaden
+//Cymbal controls
+label_cc104=Ride close
+label_cc105=Ride OH
+label_cc106=Ride pan
+label_cc100=Crash close
+label_cc101=Crash OH
+label_cc102=Crash pan
+label_cc120=Cymbal tune
+label_cc120=Cymbal dryness
+//Effects
+label_cc400=Limiter thresh
+label_cc401=Limiter level
+
+//Toms
+set_cc34=100
+set_cc35=70
+set_cc36=87
+set_cc37=63
+set_cc38=100
+set_cc39=70
+set_cc40=40
+set_cc41=63
+set_cc42=100
+set_cc43=70
+set_cc44=20
+set_cc45=63
+//Kick
+set_cc70=100
+set_cc75=63
+//Snare
+set_cc80=100
+set_cc81=40
+set_cc82=60
+set_cc88=63
+set_cc89=63
+//Hi-hat
+set_cc4=$ht_lo_hi_init
+set_cc15=100
+set_cc16=100
+set_cc17=63
+set_cc18=63	
+//Cymbals
+set_cc100=40
+set_cc101=100
+set_cc102=30
+set_cc104=40
+set_cc105=100
+set_cc106=97
+set_cc120=63
+//Effects
+set_cc400=63
+set_cc401=63
+
+<global> loop_mode=one_shot
+seq_length=4
+off_mode=normal
+ampeg_release=0.01
+bend_down=1200
+bend_up=1200
+//The non-kick low cut
+eq1_freq=50
+eq1_bw=4
+eq1_gain_oncc77=-18
+//Default tune and pan curves
+pan_curvecc36=9
+tune_curvecc37=9
+pan_curvecc40=9
+tune_curvecc41=9
+pan_curvecc44=9
+tune_curvecc45=9
+tune_curvecc75=9
+pan_curvecc88=9
+tune_curvecc89=9
+pan_curvecc17=9
+tune_curvecc18=9
+pan_curvecc106=9
+pan_curvecc102=9
+tune_curvecc120=9
+
+
+
+//Kick
+#include "mappings/kick_24_map.sfz"
+
+//Snare
+#include "mappings/snare_14_map_basic.sfz"
+#include "mappings/snare_14_map_sidestick.sfz"
+
+//Hi-hat
+#include "mappings/hihat_14_map_basic.sfz"
+#include "mappings/hihat_14_map_foot.sfz"
+//Hat mute silence groups
+<master> seq_length=1
+#include "mappings/hihat_14/hmuteg_cl.sfz"
+#include "mappings/hihat_14/hmuteg_oh.sfz"
+
+//Toms
+#include "mappings/tom_18_map_basic.sfz"
+#include "mappings/tom_15_map_basic.sfz"
+#include "mappings/tom_14_map_basic.sfz"
+
+//Cymbals
+#include "mappings/ride_22_map_basic.sfz"
+#include "mappings/crash_17_map_basic.sfz"
+
+
+
+<effect>
+param_offset=400
+type=com.mda.Limiter
+
+//Curves
+#include "mappings/curves/mute_curves.sfz"
+#include "mappings/curves/tune_curve.sfz"
+#include "mappings/curves/cym_pan_curves.sfz"
+#include "mappings/curves/tom_pan_curves.sfz"
+#include "mappings/curves/hh_kb_vol_curves.sfz"

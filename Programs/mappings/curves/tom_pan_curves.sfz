@@ -1,0 +1,23 @@
+//The pan curves for the tom overheads
+//Basically all the same as the regular pan curve, but the center is set to whatever the tom's default position is
+//This way, when the tom is in the default pan setting, the overheads will be unaffected by the pan control
+
+<curve>curve_index=11
+v000=-1
+v107=0
+v127=1
+
+<curve>curve_index=12
+v000=-1
+v087=0
+v127=1
+
+<curve>curve_index=13
+v000=-1
+v040=0
+v127=1
+
+<curve>curve_index=14
+v000=-1
+v020=0
+v127=1

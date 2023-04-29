@@ -1,0 +1,64 @@
+//Rim click
+
+<master>
+key=$snrckey
+amplitude_cc97=100
+locc97=1
+tune_cc98=2400
+pan_cc88=100
+//Make the bottom velocity layer not quite so whisper-quiet at the bottom
+amp_velcurve_1=0.2
+#include "mappings/snare_14/sn_rc_btm.sfz"
+
+<master>
+key=$snrckey
+amplitude_cc95=100
+locc95=1
+tune_cc98=2400
+pan_cc88=100
+//Make the bottom velocity layer not quite so whisper-quiet at the bottom
+amp_velcurve_1=0.2
+#include "mappings/snare_14/sn_rc_top.sfz"
+
+<master>
+key=$snrckey
+amplitude_cc96=100
+locc96=1
+tune_cc98=2400
+pan_cc88=100
+//Make the bottom velocity layer not quite so whisper-quiet at the bottom
+amp_velcurve_1=0.2
+#include "mappings/snare_14/sn_rc_oh.sfz"
+
+
+//Shell click
+
+<master>
+key=$snsckey
+amplitude_cc97=100
+locc97=1
+tune_cc98=2400
+pan_cc88=100
+//Make the bottom velocity layer not quite so whisper-quiet at the bottom
+amp_velcurve_1=0.2
+#include "mappings/snare_14/sn_sc_btm.sfz"
+
+<master>
+key=$snsckey
+amplitude_cc95=100
+locc95=1
+tune_cc98=2400
+pan_cc88=100
+//Make the bottom velocity layer not quite so whisper-quiet at the bottom
+amp_velcurve_1=0.2
+#include "mappings/snare_14/sn_sc_top.sfz"
+
+<master>
+key=$snsckey
+amplitude_cc96=100
+locc96=1
+tune_cc98=2400
+pan_cc88=100
+//Make the bottom velocity layer not quite so whisper-quiet at the bottom
+amp_velcurve_1=0.2
+#include "mappings/snare_14/sn_sc_oh.sfz"

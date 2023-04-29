@@ -1,0 +1,61 @@
+<GUI w="775" h="335">
+
+	<!-- Kick bus GUI -->
+
+ 	<StaticImage x="0" y="0" w="773" h="333" image="control_tab_kick.png" transparent="0"  />
+	
+	<!-- Controls - Effects for all -->
+
+	<StaticText x="57" y="25" w="50" h="20" text="Low cut" color_text="#101D0AFF" transparent="1"  />
+
+	<Knob param="77"  x="67" y="40" image="Perc_knob.png" frames="128"  />
+
+	<StaticText x="127" y="25" w="50" h="20" text="Crush" color_text="#101D0AFF" transparent="1"  />
+
+	<Knob param="401"  x="137" y="40" image="Perc_knob.png" frames="128"  />
+
+	<!-- Controls - Regular -->
+	
+	<StaticText x="126" y="85" w="180" h="20" text="NORMAL VOLUMES" color_text="#101D0AFF" transparent="1"  />
+
+
+	<StaticText x="126" y="115" w="50" h="20" text="Kick out" color_text="#101D0AFF" transparent="1"  />
+	
+	<Knob param="70" x="139" y="131" image="Perc_stumpy.png" frames="81"  />
+
+	<StaticText x="191" y="115" w="50" h="20" text="Overhead" color_text="#101D0AFF" transparent="1"  />
+	
+	<Knob param="71" x="204" y="131" image="Perc_stumpy.png" frames="81"  />
+
+	<StaticText x="256" y="115" w="50" h="20" text="Dirt" color_text="#101D0AFF" transparent="1"  />
+	
+	<Knob param="72" x="269" y="131" image="Perc_stumpy.png" frames="81"  />
+
+
+	<!-- Controls - Transposed -->
+	
+	<StaticText x="461" y="85" w="180" h="20" text="TRANSPOSED" color_text="#101D0AFF" transparent="1"  />
+
+	<StaticText x="526" y="115" w="50" h="20" text="Punch" color_text="#101D0AFF" transparent="1"  />
+	
+	<Knob param="74" x="539" y="131" image="Perc_stumpy.png" frames="81"  />
+
+
+
+	<!-- Controls - Little knobs -->
+
+	<StaticText x="319" y="222" w="50" h="18" text="Tune" color_text="#101D0AFF" transparent="1"   />
+	
+	<Knob param="75" x="329" y="240" image="Perc_knob.png" frames="128"  />
+
+	<StaticText x="384" y="222" w="50" h="18" text="Deaden" color_text="#101D0AFF" transparent="1"   />
+	
+	<Knob param="76" x="394" y="240" image="Perc_knob.png" frames="128"  />
+
+	<StaticText x="444" y="222" w="70" h="18" text="Snare tune" color_text="#101D0AFF" transparent="1"   />
+	
+	<Knob param="89" x="464" y="240" image="Perc_knob.png" frames="128"  />
+
+	
+
+</GUI>                                                                                                                                       

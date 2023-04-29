@@ -1,0 +1,17 @@
+<curve>curve_index=33
+v000=1
+v052=1
+v090=0.8
+v127=0.13
+
+<curve>curve_index=34
+v000=1
+v052=1
+v090=0.7
+v127=0.1
+
+//And the curve for the effect of the pedal position on muting time
+<curve>curve_index=40
+v000=1
+v063=0.25
+v127=0

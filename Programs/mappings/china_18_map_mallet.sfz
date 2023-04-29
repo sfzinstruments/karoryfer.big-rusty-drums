@@ -1,0 +1,68 @@
+//Regular hits
+
+<master>
+key=$cncnkey
+amplitude_cc108=80
+locc108=1
+locc28=96
+pan_cc110=100
+tune_cc120=1200
+group=75
+off_by=76
+polyphony=4
+ampeg_release=0.3
+ampeg_hold=0.1
+ampeg_decay=7.0
+ampeg_sustain=100
+ampeg_sustain_oncc121=-100
+ampeg_sustain_curvecc121=8
+#include "mappings/china_18/cn_mallet_cl.sfz"
+
+<master>
+key=$cncnkey
+amplitude_cc109=80
+locc109=1
+locc28=96
+pan_cc110=100
+pan_curvecc110=18
+tune_cc120=1200
+group=85
+off_by=86
+polyphony=4
+ampeg_release=0.3
+ampeg_hold=0.1
+ampeg_decay=7.0
+ampeg_sustain=100
+ampeg_sustain_oncc121=-100
+ampeg_sustain_curvecc121=8
+#include "mappings/china_18/cn_mallet_oh.sfz"
+
+
+//Edge chokes
+
+<master>
+key=$cnchkey
+amplitude_cc108=35
+locc108=1
+locc28=96
+pan_cc110=100
+tune_cc120=1200
+ampeg_attack=0.15
+group=76
+//For chokes, make very low velocities quite quiet
+amp_velcurve_1=0.03
+#include "mappings/china_18/cn_choke_cl.sfz"
+
+<master>
+key=$cnchkey
+amplitude_cc109=35
+locc109=1
+locc28=96
+pan_cc110=100
+pan_curvecc110=18
+tune_cc120=1200
+ampeg_attack=0.15
+group=86
+//For chokes, make very low velocities quite quiet
+amp_velcurve_1=0.03
+#include "mappings/china_18/cn_choke_oh.sfz"

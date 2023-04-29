@@ -1,0 +1,101 @@
+<group> group=28
+//The range which mutes hi-hat pedal return noises
+//Everything except themselves
+sample=*silence
+loop_mode=loop_continuous off_mode=fast
+ampeg_attack=0 ampeg_decay=0 ampeg_sustain=0 ampeg_release=0
+off_by=27
+<region> key=$htclstkey
+<region> key=$htchkkey
+<region> key=$htvartkey
+<region> key=$htclsskey
+<region> key=$htsplkey
+<region> key=$htvarskey
+
+<group> group=27
+//The range which mutes footsplashes
+//Everything except pedal return noises
+//Footsplashes are the only articulation which mutes itself
+//Splash also mutes splash, but key=$htsplkey is not part of this silence group
+//Instead splash regions themselves are marked with group=27 also
+//Kind of a kludge, but keeps the silence from instantly muting the splash
+//while allowing a subsequent splash to mute the current splash
+sample=*silence
+loop_mode=loop_continuous off_mode=fast
+ampeg_attack=0 ampeg_decay=0 ampeg_sustain=0 ampeg_release=0
+off_by=27
+<region> key=$htclstkey
+<region> key=$htchkkey
+<region> key=$htvartkey
+<region> key=$htclsskey
+<region> key=$htvarskey
+
+<group> group=25
+//The range which mutes open hi-hats
+//Everything except open and footsplash
+sample=*silence
+loop_mode=loop_continuous off_mode=fast
+ampeg_attack=0 ampeg_decay=0 ampeg_sustain=0 ampeg_release=0
+off_by=24
+<region> key=$htclstkey
+<region> key=$htchkkey
+<region> key=$htvartkey locc4=$mg_open_lo hicc4=$mg_open_hi
+<region> key=$htclsskey
+<region> key=$htvarskey locc4=$mg_open_lo hicc4=$mg_open_hi
+
+<group> group=24
+//The range which mutes half open hi-hats
+//Everything except open and half-open
+sample=*silence
+loop_mode=loop_continuous off_mode=fast
+ampeg_attack=0 ampeg_decay=0 ampeg_sustain=0 ampeg_release=0
+off_by=23
+<region> key=$htclstkey
+<region> key=$htchkkey
+<region> key=$htvartkey locc4=$mg_ho_lo hicc4=$mg_ho_hi
+<region> key=$htclsskey
+<region> key=$htvarskey locc4=$mg_ho_lo hicc4=$mg_ho_hi
+
+<group> group=23
+//The range which mutes quarter open hi-hats
+//Everything except open, half-open and quarter open
+sample=*silence
+loop_mode=loop_continuous off_mode=fast
+ampeg_attack=0 ampeg_decay=0 ampeg_sustain=0 ampeg_release=0
+off_by=22
+<region> key=$htclstkey
+<region> key=$htchkkey
+<region> key=$htvartkey locc4=$mg_qo_lo hicc4=$mg_qo_hi
+<region> key=$htclsskey
+<region> key=$htvarskey locc4=$mg_qo_lo hicc4=$mg_qo_hi
+
+<group> group=22
+//The range which mutes loosely closed hi-hats
+//Everything except open, half-open, quarter open and loosely closed
+sample=*silence
+loop_mode=loop_continuous off_mode=fast
+ampeg_attack=0 ampeg_decay=0 ampeg_sustain=0 ampeg_release=0
+off_by=21
+<region> key=$htclstkey
+<region> key=$htchkkey
+<region> key=$htvartkey locc4=$mg_lc_lo hicc4=$mg_lc_hi
+<region> key=$htclsskey
+<region> key=$htvarskey locc4=$mg_lc_lo hicc4=$mg_lc_hi
+
+<group> group=21
+//The range which mutes regular closed hi-hats
+//Just foot chik and tightly closed
+sample=*silence
+loop_mode=loop_continuous off_mode=fast
+ampeg_attack=0 ampeg_decay=0 ampeg_sustain=0 ampeg_release=0
+off_by=20
+<region> key=$htclstkey
+<region> key=$htchkkey
+<region> key=$htclsskey
+
+<group> group=20
+//The range which mutes tightly closed hi-hats - just foot chik
+sample=*silence
+loop_mode=loop_continuous off_mode=fast
+ampeg_attack=0 ampeg_decay=0 ampeg_sustain=0 ampeg_release=0
+<region> key=$htchkkey

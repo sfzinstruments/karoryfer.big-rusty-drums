@@ -1,0 +1,55 @@
+<?xml version="1.0" ?>
+<AriaSave version="1933" productID="1014">
+    <Slot id="0" name="01-Full kit" bankId="2523" version="1000" channel="-1" poly="64" tuning="0" pb_range="-1" ptrans="0" mtrans="0" moctave="0" mute="0">
+        <Main id="0" value="1" />
+        <Main id="1" value="0" />
+        <Main id="2" value="0" />
+        <Main id="3" value="0" />
+        <Main id="4" value="0" />
+        <Main id="5" value="0" />
+        <Main id="6" value="0" />
+        <Main id="7" value="0" />
+        <Main id="8" value="0" />
+        <Main id="9" value="0" />
+        <Main id="10" value="0" />
+        <Main id="11" value="0" />
+        <Main id="12" value="0" />
+        <Main id="13" value="0" />
+        <Main id="14" value="0" />
+        <Main id="15" value="0" />
+        <Param id="15" value="0.4624015688896179" />
+        <Param id="18" value="0.3860629796981812" />
+        <Param id="30" value="0.1774015575647354" />
+        <Param id="31" value="0.6161810755729675" />
+        <Param id="33" value="0.466062992811203" />
+        <Param id="34" value="0.09740155935287476" />
+        <Param id="35" value="0.6261810660362244" />
+        <Param id="37" value="0.4610629975795746" />
+        <Param id="38" value="0.07240155339241028" />
+        <Param id="39" value="0.6561810970306396" />
+        <Param id="41" value="0.4610629975795746" />
+        <Param id="42" value="0.05740155652165413" />
+        <Param id="43" value="0.646181046962738" />
+        <Param id="45" value="0.4910629987716675" />
+        <Param id="48" value="0.119999997317791" />
+        <Param id="71" value="0.2900000214576721" />
+        <Param id="72" value="0.1899999976158142" />
+        <Param id="75" value="0.4410629570484161" />
+        <Param id="80" value="0" />
+        <Param id="81" value="0.4749606251716614" />
+        <Param id="82" value="0.6224409341812134" />
+        <Param id="85" value="0.4550000131130219" />
+        <Param id="89" value="0.4610629975795746" />
+        <Param id="92" value="0.1174015551805496" />
+        <Param id="94" value="0.291062980890274" />
+        <Param id="95" value="0.2199999988079071" />
+        <Param id="98" value="0.3510629832744598" />
+        <Param id="100" value="0" />
+        <Param id="104" value="0" />
+        <Param id="108" value="0" />
+        <Param id="112" value="0" />
+        <Param id="116" value="0" />
+        <Param id="120" value="0.3760629892349243" />
+        <Param id="124" value="0" />
+    </Slot>
+</AriaSave>

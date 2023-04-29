@@ -1,0 +1,147 @@
+//Regular ride bow hits
+
+<master>
+key=$rdsrdkey
+amplitude_cc112=60
+locc112=1
+hicc28=63
+pan_cc114=100
+tune_cc120=1200
+seq_length=3
+group=70
+off_by=73
+polyphony=5
+ampeg_release=0.3
+ampeg_hold=0.1
+ampeg_decay=7.5
+ampeg_sustain=100
+ampeg_sustain_oncc121=-100
+ampeg_sustain_curvecc121=8
+#include "mappings/ride_sizzle_19/rds_cl.sfz"
+
+<master>
+key=$rdsrdkey
+amplitude_cc113=60
+locc113=1
+hicc28=63
+pan_cc114=100
+pan_curvecc114=17
+tune_cc120=1200
+seq_length=3
+group=80
+off_by=83
+polyphony=5
+ampeg_release=0.3
+ampeg_hold=0.1
+ampeg_decay=7.5
+ampeg_sustain=100
+ampeg_sustain_oncc121=-100
+ampeg_sustain_curvecc121=8
+#include "mappings/ride_sizzle_19/rds_oh.sfz"
+
+//Bell hits
+
+<master>
+key=$rdsblkey
+amplitude_cc112=60
+locc112=1
+hicc28=63
+pan_cc114=100
+tune_cc120=1200
+group=71
+off_by=73
+polyphony=4
+ampeg_release=0.3
+ampeg_hold=0.1
+ampeg_decay=4.0
+ampeg_sustain=100
+ampeg_sustain_oncc121=-100
+ampeg_sustain_curvecc121=8
+#include "mappings/ride_sizzle_19/rds_bl_cl.sfz"
+
+<master>
+key=$rdsblkey
+amplitude_cc113=60
+locc113=1
+hicc28=63
+pan_cc114=100
+pan_curvecc114=17
+tune_cc120=1200
+group=81
+off_by=83
+polyphony=4
+ampeg_release=0.3
+ampeg_hold=0.1
+ampeg_decay=4.0
+ampeg_sustain=100
+ampeg_sustain_oncc121=-100
+ampeg_sustain_curvecc121=8
+#include "mappings/ride_sizzle_19/rds_bl_oh.sfz"
+
+//Edge hits (crashes)
+
+<master>
+key=$rdscrkey
+amplitude_cc112=60
+locc112=1
+hicc28=63
+pan_cc114=100
+tune_cc120=1200
+group=72
+off_by=73
+polyphony=6
+ampeg_release=0.3
+ampeg_hold=0.1
+ampeg_decay=8.0
+ampeg_sustain=100
+ampeg_sustain_oncc121=-100
+ampeg_sustain_curvecc121=8
+#include "mappings/ride_sizzle_19/rds_ed_cl.sfz"
+
+<master>
+key=$rdscrkey
+amplitude_cc113=60
+locc113=1
+hicc28=63
+pan_cc114=100
+pan_curvecc114=17
+tune_cc120=1200
+group=82
+off_by=83
+polyphony=6
+ampeg_release=0.3
+ampeg_hold=0.1
+ampeg_decay=8.0
+ampeg_sustain=100
+ampeg_sustain_oncc121=-100
+ampeg_sustain_curvecc121=8
+#include "mappings/ride_sizzle_19/rds_ed_oh.sfz"
+
+//Edge chokes
+
+<master>
+key=$rdschkey
+amplitude_cc112=30
+locc112=1
+hicc28=63
+pan_cc114=100
+tune_cc120=1200
+ampeg_attack=0.15
+group=73
+//For chokes, make very low velocities quite quiet
+amp_velcurve_1=0.03
+#include "mappings/ride_sizzle_19/rds_choke_cl.sfz"
+
+<master>
+key=$rdschkey
+amplitude_cc113=30
+locc113=1
+hicc28=63
+pan_cc114=100
+pan_curvecc114=17
+tune_cc120=1200
+ampeg_attack=0.15
+group=83
+//For chokes, make very low velocities quite quiet
+amp_velcurve_1=0.03
+#include "mappings/ride_sizzle_19/rds_choke_oh.sfz"

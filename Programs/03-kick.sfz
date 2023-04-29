@@ -1,0 +1,57 @@
+<control>
+//Key assignments
+#include "keymap/keymap.sfz"
+
+//Kick controls
+label_cc70=Kick mic
+label_cc71=Kick OH
+label_cc72=Kick buzz
+label_cc74=Kick punch
+label_cc75=Kick tune
+label_cc76=Kick deaden
+label_cc77=Low cut
+//Snare controls
+label_cc89=Snare tune
+//Effects
+label_cc400=Limiter thresh
+label_cc401=Limiter level
+
+//Kick
+set_cc70=100
+set_cc75=63
+//Snare
+set_cc89=63
+//Effects
+set_cc400=63
+set_cc401=63
+
+<global> loop_mode=one_shot
+seq_length=4
+off_mode=normal
+ampeg_release=0.01
+bend_down=1200
+bend_up=1200
+//The non-kick low cut
+eq1_freq=50
+eq1_bw=4
+eq1_gain_oncc77=-18
+//Default tune and pan curves
+tune_curvecc75=9
+tune_curvecc89=9
+//Make the bottom velocity layer not quite so whisper-quiet at the bottom
+amp_velcurve_1=0.4
+
+
+//Kick
+#include "mappings/kick_24_map.sfz"
+#include "mappings/kick_24_nodamp_map.sfz"
+
+
+
+<effect>
+param_offset=400
+type=com.mda.Limiter
+
+//Curves
+#include "mappings/curves/mute_curves.sfz"
+#include "mappings/curves/tune_curve.sfz"

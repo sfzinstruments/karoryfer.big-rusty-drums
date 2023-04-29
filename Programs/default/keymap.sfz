@@ -1,0 +1,88 @@
+//Key assignments
+//Mechanical noises
+#define $kphkey 24
+#define $kprkey 25
+#define $htphkey 30
+#define $htprkey 32	
+//Kick
+#define $kickndkey 35
+#define $kickkey 36
+//Snare
+//Hits
+#define $snsskey 37
+#define $sncenterkey 38
+#define $snedgekey 39
+#define $snrimskey 40
+//Release noise
+#define $snrelkey 26
+//Brush digs
+#define $sndigkey 76
+//Stir stuff
+#define $snstlkey 73
+#define $snstskey 74
+#define $snflkey 75
+//Stir mute key is the same for snare and floor tom
+#define $stmkey 77
+//Hi-hat
+#define $htclstkey 42
+#define $htchkkey 44
+#define $htvartkey 46
+#define $htclsskey 54
+#define $htsplkey 56
+#define $htvarskey 58
+#define $htretkey 34
+//Toms
+#define $t22key 41
+#define $t18key 43
+#define $t15key 45
+#define $t14key 47
+#define $t18relkey 31
+//18 inch tom brush digs
+#define $t18digkey 81
+//18 inch tom stir stuff
+#define $t18stlkey 78
+#define $t18stskey 79
+#define $t18flkey 80
+//Ride
+#define $rdrdkey 51
+#define $rdcrkey 52
+#define $rdblkey 53
+//skip 54 because that's used by hi-hat
+#define $rdchkey 55
+//Crash
+#define $crcrkey 49
+#define $crchkey 50
+//China
+//Skip 56 and 58 - used by hi-hat
+#define $cncnkey 57
+#define $cnchkey 59
+//Sizzle ride
+#define $rdsrdkey 60
+#define $rdscrkey 61
+#define $rdsblkey 62
+#define $rdschkey 63
+//Sizzle crash
+//Skipping the 66, 68 and 70 again for consistency
+//Though they're actually unused
+#define $crsrdkey 64
+#define $crscrkey 65
+#define $crsblkey 67
+#define $crschkey 69
+//Stack
+#define $stmidkey 71
+#define $stedkey 72
+//Percussive clicks
+#define $ksckey 83
+#define $krckey 84
+#define $ktckey 85
+#define $snrckey 86
+#define $htperckey 87
+#define $snsckey 88
+#define $t22rckey 89
+#define $t22sckey 90
+#define $t18rckey 91
+#define $t18sckey 92
+#define $t15rckey 93
+#define $t15sckey 94
+#define $t14rckey 95
+#define $t14sckey 96

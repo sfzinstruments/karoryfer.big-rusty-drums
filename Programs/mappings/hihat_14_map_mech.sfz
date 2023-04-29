@@ -1,0 +1,43 @@
+//Pedal hits
+
+<master>
+key=$htphkey
+amplitude_cc92=20
+locc92=1
+tune_cc94=2400
+pan_cc17=100
+//Make the bottom velocity layer not quite so whisper-quiet at the bottom
+amp_velcurve_1=0.1
+#include "mappings/hihat_14/ht_phit_cl.sfz"
+
+<master>
+key=$htphkey
+amplitude_cc93=20
+locc93=1
+tune_cc94=2400
+pan_cc17=100
+//Make the bottom velocity layer not quite so whisper-quiet at the bottom
+amp_velcurve_1=0.1
+#include "mappings/hihat_14/ht_phit_oh.sfz"
+
+//Pedal returns
+
+<master>
+key=$htprkey
+amplitude_cc92=20
+locc92=1
+tune_cc94=2400
+pan_cc17=100
+//Make the bottom velocity layer not quite so whisper-quiet at the bottom
+amp_velcurve_1=0.1
+#include "mappings/hihat_14/ht_preturn_cl.sfz"
+
+<master>
+key=$htprkey
+amplitude_cc93=20
+locc93=1
+tune_cc94=2400
+pan_cc17=100
+//Make the bottom velocity layer not quite so whisper-quiet at the bottom
+amp_velcurve_1=0.1
+#include "mappings/hihat_14/ht_preturn_oh.sfz"

@@ -1,0 +1,72 @@
+<GUI w="775" h="335">
+
+	<!-- Hi-hat bus GUI -->
+ 
+	<!-- Background -->
+
+ 	<StaticImage x="0" y="0" w="773" h="333" image="control_tab_hihat.png" transparent="0"  />
+	
+	<!-- Controls - Effects for all -->
+
+	<StaticText x="57" y="25" w="50" h="20" text="Low cut" color_text="#101D0AFF" transparent="1"  />
+
+	<Knob param="77"  x="67" y="40" image="Perc_knob.png" frames="128"  />
+
+	<StaticText x="127" y="25" w="50" h="20" text="Crush" color_text="#101D0AFF" transparent="1"  />
+
+	<Knob param="401"  x="137" y="40" image="Perc_knob.png" frames="128"  />
+	
+	<!-- Controls - Sticking selection -->
+
+	<StaticText x="125" y="115" w="90" h="18" text="Select" color_text="#101D0AFF" transparent="1"   />
+
+	<OptionMenu    param="27"  x="125"  y="142"  w="90" h="18"  font_size="Small" alignment="center" color_text="#CFAF89FF" transparent="0"  >	
+		<OptionItem name="Sticks"          value="0.25" />	
+		<OptionItem name="Brushes"                 value="0.75" />
+	</OptionMenu>
+
+	<StaticText x="525" y="115" w="90" h="18" text="Position" color_text="#101D0AFF" transparent="1"   />
+
+	<OptionMenu    param="4"  x="525"  y="142"  w="90" h="18"  font_size="Small" alignment="center"  color_text="#CFAF89FF" transparent="0"   >
+		<OptionItem name="Closed"		    value="0.121" />
+		<OptionItem name="Loosely closed"		    value="0.304" />
+		<OptionItem name="Quarter open"	    value="0.518" />
+		<OptionItem name="Half open"		    value="0.713" />
+		<OptionItem name="Fully open"    value="0.909" />		
+	</OptionMenu>
+
+	<!-- Controls - Regular -->
+	
+	<StaticText x="291" y="85" w="180" h="20" text="VOLUMES" color_text="#101D0AFF" transparent="1"  />
+
+
+	<StaticText x="326" y="115" w="50" h="20" text="Close" color_text="#101D0AFF" transparent="1"  />
+	
+	<Knob param="15" x="339" y="131" image="Perc_stumpy.png" frames="81"  />
+
+	<StaticText x="391" y="115" w="50" h="20" text="OH" color_text="#101D0AFF" transparent="1"  />
+	
+	<Knob param="16" x="404" y="131" image="Perc_stumpy.png" frames="81"  />
+
+
+
+
+
+
+	<!-- Controls - Little knobs -->
+
+	<StaticText x="292" y="222" w="50" h="18" text="Pan" color_text="#101D0AFF" transparent="1"   />
+	
+	<Knob param="17" x="302" y="240" image="Perc_knob.png" frames="128"  />
+
+	<StaticText x="357" y="222" w="50" h="18" text="Tune" color_text="#101D0AFF" transparent="1"   />
+	
+	<Knob param="18" x="367" y="240" image="Perc_knob.png" frames="128"  />
+
+	<StaticText x="422" y="222" w="50" h="18" text="Dryness" color_text="#101D0AFF" transparent="1"   />
+	
+	<Knob param="19" x="432" y="240" image="Perc_knob.png" frames="128"  />
+
+
+
+</GUI>                                                                                                                                       

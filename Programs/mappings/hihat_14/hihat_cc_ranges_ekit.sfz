@@ -1,0 +1,22 @@
+//Hi-hat CC ranges - order for e-kit use
+//For keyboard it would be backwards
+#define $ht_lo_hi_init 0
+#define $ht_cl_lo 103
+#define $ht_cl_hi 127
+#define $ht_lc_lo 77
+#define $ht_lc_hi 102
+#define $ht_qo_lo 52
+#define $ht_qo_hi 76
+#define $ht_ho_lo 26
+#define $ht_ho_hi 51
+#define $ht_open_lo 0
+#define $ht_open_hi 25
+//Mute group CC ranges
+#define $mg_open_lo 26
+#define $mg_open_hi 127
+#define $mg_ho_lo 52
+#define $mg_ho_hi 127
+#define $mg_qo_lo 77
+#define $mg_qo_hi 127
+#define $mg_lc_lo 103
+#define $mg_lc_hi 127

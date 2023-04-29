@@ -1,0 +1,14 @@
+<region>
+sample=../Samples/tom_18/bflutter/oh/t18_flutter_rr1.wav
+
+<region>
+sample=../Samples/tom_18/bflutter/oh/t18_flutter_rr2.wav
+seq_position=2
+
+<region>
+sample=../Samples/tom_18/bflutter/oh/t18_flutter_rr3.wav
+seq_position=3
+
+<region>
+sample=../Samples/tom_18/bflutter/oh/t18_flutter_rr4.wav
+seq_position=4

@@ -1,0 +1,147 @@
+<control>
+//Key assignments
+#include "keymap/keymap.sfz"
+
+
+//Stir controls
+label_cc20=Stir length
+label_cc21=Stir tail
+label_cc22=Stir fadeout
+label_cc23=Stir shape
+//Stick, brush and mallet selections
+label_cc26=Tom sticking
+//Tom controls
+label_cc30=22 close
+label_cc31=22 oh
+label_cc32=22 pan
+label_cc33=22 tune
+label_cc34=18 close
+label_cc35=18 oh
+label_cc36=18 pan
+label_cc37=18 tune
+label_cc38=15 close
+label_cc39=15 oh
+label_cc40=15 pan
+label_cc41=15 tune
+label_cc42=14 close
+label_cc43=14 oh
+label_cc44=14 pan
+label_cc45=14 tune
+label_cc46=Lo tom punch
+label_cc47=Hi tom punch
+label_cc48=Tom dirt
+label_cc49=Tom deaden
+//Kick controls
+label_cc77=Low cut
+//Snare controls for the dirt
+label_cc88=Snare pan
+label_cc89=Snare tune
+//Effects
+label_cc400=Limiter thresh
+label_cc401=Limiter level
+
+//Stirs
+set_cc20=30
+set_cc21=40
+set_cc22=70
+set_cc23=64
+//Toms
+set_cc30=100
+set_cc31=70
+set_cc32=107
+set_cc33=63
+set_cc34=100
+set_cc35=70
+set_cc36=87
+set_cc37=63
+set_cc38=100
+set_cc39=70
+set_cc40=40
+set_cc41=63
+set_cc42=100
+set_cc43=70
+set_cc44=20
+set_cc45=63
+set_cc88=63
+set_cc89=63
+//Effects
+set_cc400=63
+set_cc401=63
+
+<global> loop_mode=one_shot
+seq_length=4
+off_mode=normal
+ampeg_release=0.01
+bend_down=1200
+bend_up=1200
+//The non-kick low cut
+eq1_freq=50
+eq1_bw=4
+eq1_gain_oncc77=-18
+//Default tune and pan curves
+pan_curvecc32=9
+tune_curvecc33=9
+pan_curvecc36=9
+tune_curvecc37=9
+pan_curvecc40=9
+tune_curvecc41=9
+pan_curvecc44=9
+tune_curvecc45=9
+pan_curvecc88=9
+tune_curvecc89=9
+//Make the bottom velocity layer not quite so whisper-quiet at the bottom
+amp_velcurve_1=0.4
+
+//Toms
+#include "mappings/tom_22_map.sfz"
+#include "mappings/tom_18_map.sfz"
+#include "mappings/tom_15_map.sfz"
+#include "mappings/tom_14_map.sfz"
+#include "mappings/tom_22_map_brush.sfz"
+#include "mappings/tom_18_map_brush.sfz"
+#include "mappings/tom_18_map_digs.sfz"
+#include "mappings/tom_18_map_release.sfz"
+#include "mappings/tom_15_map_brush.sfz"
+#include "mappings/tom_14_map_brush.sfz"
+#include "mappings/tom_14_map_mallet.sfz"
+#include "mappings/tom_15_map_mallet.sfz"
+#include "mappings/tom_18_map_mallet.sfz"
+#include "mappings/tom_22_map_mallet.sfz"
+
+<master>
+hicc23=41
+offset_random=12345
+ampeg_attack_shape=0.0
+ampeg_decay_shape=0.0
+//Make the bottom velocity layer not quite so whisper-quiet at the bottom
+amp_velcurve_1=0.1
+#include "mappings/tom_18_map_stir.sfz"
+<master>
+locc23=42
+hicc23=84
+offset_random=12345
+ampeg_attack_shape=3.5
+ampeg_decay_shape=-1.4
+//Make the bottom velocity layer not quite so whisper-quiet at the bottom
+amp_velcurve_1=0.1
+#include "mappings/tom_18_map_stir.sfz"
+<master>
+locc23=85
+offset_random=12345
+ampeg_attack_shape=5.2
+ampeg_decay_shape=-3.5
+//Make the bottom velocity layer not quite so whisper-quiet at the bottom
+amp_velcurve_1=0.1
+#include "mappings/tom_18_map_stir.sfz"
+#include "mappings/t18_stir_mute_groups.sfz"
+
+
+
+<effect>
+param_offset=400
+type=com.mda.Limiter
+
+//Curves
+#include "mappings/curves/mute_curves.sfz"
+#include "mappings/curves/tune_curve.sfz"
+#include "mappings/curves/tom_pan_curves.sfz"

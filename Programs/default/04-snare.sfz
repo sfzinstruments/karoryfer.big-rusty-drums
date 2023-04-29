@@ -1,0 +1,104 @@
+<control>
+//Key assignments
+#include "keymap/keymap.sfz"
+
+//Stir controls
+label_cc20=Stir length
+label_cc21=Stir tail
+label_cc22=Stir fadeout
+label_cc23=Stir shape
+//Stick, brush and mallet selections
+label_cc25=Snare sticking
+//Kick controls, or at least grouped with them - low cut for everything except the kick out mic
+label_cc77=Low cut
+//Snare controls
+label_cc80=Snare bottom
+label_cc81=Snare top
+label_cc82=Snare OH
+label_cc83=Snare snap
+label_cc84=Snare punch
+label_cc85=Snare epic
+label_cc88=Snare pan
+label_cc89=Snare tune
+label_cc90=Snare deaden
+//Effects
+label_cc400=Limiter thresh
+label_cc401=Limiter level
+
+//Stirs
+set_cc20=30
+set_cc21=40
+set_cc22=70
+set_cc23=64
+//Snare
+set_cc80=100
+set_cc81=40
+set_cc82=60
+set_cc88=63
+set_cc89=63
+//Effects
+set_cc400=63
+set_cc401=63
+
+<global> loop_mode=one_shot
+seq_length=4
+off_mode=normal
+ampeg_release=0.01
+bend_down=1200
+bend_up=1200
+//The non-kick low cut
+eq1_freq=50
+eq1_bw=4
+eq1_gain_oncc77=-18
+//Default tune and pan curves
+pan_curvecc88=9
+tune_curvecc89=9
+//Make the bottom velocity layer not quite so whisper-quiet at the bottom
+amp_velcurve_1=0.4
+
+//Snare
+//Articulations selectable by the sticking control
+#include "mappings/snare_14_map.sfz"
+#include "mappings/snare_14_map_tall.sfz"
+#include "mappings/snare_14_map_prep.sfz"
+#include "mappings/snare_14_map_brush.sfz"
+#include "mappings/snare_14_map_mallet.sfz"
+//Sticking-independent articulations
+#include "mappings/snare_14_map_sidestick.sfz"
+#include "mappings/snare_14_map_dig.sfz"
+#include "mappings/snare_14_map_release.sfz"
+//Stirs
+<master>
+hicc23=41
+offset_random=12345
+ampeg_attack_shape=0.0
+ampeg_decay_shape=0.0
+//Make the bottom velocity layer not quite so whisper-quiet at the bottom
+amp_velcurve_1=0.1
+#include "mappings/snare_14_map_stir.sfz"
+<master>
+locc23=42
+hicc23=84
+offset_random=12345
+ampeg_attack_shape=3.5
+ampeg_decay_shape=-1.4
+//Make the bottom velocity layer not quite so whisper-quiet at the bottom
+amp_velcurve_1=0.1
+#include "mappings/snare_14_map_stir.sfz"
+<master>
+locc23=85
+offset_random=12345
+ampeg_attack_shape=5.2
+ampeg_decay_shape=-3.5
+//Make the bottom velocity layer not quite so whisper-quiet at the bottom
+amp_velcurve_1=0.1
+#include "mappings/snare_14_map_stir.sfz"
+#include "mappings/sn_stir_mute_groups.sfz"
+
+<effect>
+param_offset=400
+type=com.mda.Limiter
+
+//Curves
+#include "mappings/curves/mute_curves.sfz"
+#include "mappings/curves/tune_curve.sfz"

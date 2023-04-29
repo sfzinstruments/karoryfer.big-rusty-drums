@@ -1,0 +1,101 @@
+<GUI w="775" h="335">
+
+	<!-- Snare bus GUI -->
+ 
+ 	<StaticImage x="0" y="0" w="773" h="333" image="control_tab_snare.png" transparent="0"  />
+	
+	<!-- Controls - Effects for all -->
+
+	<StaticText x="57" y="25" w="50" h="20" text="Low cut" color_text="#101D0AFF" transparent="1"  />
+
+	<Knob param="77"  x="67" y="40" image="Perc_knob.png" frames="128"  />
+
+	<StaticText x="127" y="25" w="50" h="20" text="Crush" color_text="#101D0AFF" transparent="1"  />
+
+	<Knob param="401"  x="137" y="40" image="Perc_knob.png" frames="128"  />
+	
+	<!-- Controls - Sticking and preparation selection -->
+
+	<StaticText x="180" y="222" w="50" h="18" text="Select" color_text="#101D0AFF" transparent="1"   />
+
+	<OptionMenu    param="25"  x="125"  y="242"  w="160" h="18"  font_size="Small" alignment="center" color_text="#CFAF89FF" transparent="0"  >	
+		<OptionItem name="Sticks regular"          value="0.15" />
+		<OptionItem name="Sticks with tom"         value="0.35" />
+		<OptionItem name="Sticks with tambourine"  value="0.4" />	
+		<OptionItem name="Brushes"                 value="0.6" />
+		<OptionItem name="Mallets"      value="0.9" />	
+	</OptionMenu>
+
+	<!-- Controls - Regular -->
+	
+	<StaticText x="26" y="85" w="180" h="20" text="NORMAL VOLUMES" color_text="#101D0AFF" transparent="1"  />
+
+
+	<StaticText x="26" y="115" w="50" h="20" text="Bottom" color_text="#101D0AFF" transparent="1"  />
+	
+	<Knob param="80" x="39" y="131" image="Perc_stumpy.png" frames="81"  />
+
+	<StaticText x="91" y="115" w="50" h="20" text="Top" color_text="#101D0AFF" transparent="1"  />
+	
+	<Knob param="81" x="104" y="131" image="Perc_stumpy.png" frames="81"  />
+
+	<StaticText x="156" y="115" w="50" h="20" text="Overhead" color_text="#101D0AFF" transparent="1"  />
+	
+	<Knob param="82" x="169" y="131" image="Perc_stumpy.png" frames="81"  />
+
+
+	<!-- Controls - Transposed -->
+	
+	<StaticText x="291" y="85" w="180" h="20" text="TRANSPOSED" color_text="#101D0AFF" transparent="1"  />
+
+	<StaticText x="291" y="115" w="50" h="20" text="Snap" color_text="#101D0AFF" transparent="1"  />
+	
+	<Knob param="83" x="304" y="131" image="Perc_stumpy.png" frames="81"  />
+
+	<StaticText x="356" y="115" w="50" h="20" text="Punch" color_text="#101D0AFF" transparent="1"  />
+	
+	<Knob param="84" x="369" y="131" image="Perc_stumpy.png" frames="81"  />
+
+	<StaticText x="421" y="115" w="50" h="20" text="Epic" color_text="#101D0AFF" transparent="1"  />
+	
+	<Knob param="85" x="434" y="131" image="Perc_stumpy.png" frames="81"  />
+
+	<!-- Controls - Stirs -->
+	
+	<StaticText x="556" y="85" w="180" h="20" text="BRUSH STIRS" color_text="#101D0AFF" transparent="1"  />
+
+
+	<StaticText x="556" y="115" w="50" h="20" text="Length" color_text="#101D0AFF" transparent="1"  />
+	
+	<Knob param="20" x="569" y="131" image="Perc_stumpy.png" frames="81"  />
+
+	<StaticText x="621" y="115" w="50" h="20" text="Tail" color_text="#101D0AFF" transparent="1"  />
+	
+	<Knob param="21" x="634" y="131" image="Perc_stumpy.png" frames="81"  />
+
+	<StaticText x="686" y="115" w="50" h="20" text="Crossfade" color_text="#101D0AFF" transparent="1"  />
+	
+	<Knob param="22" x="699" y="131" image="Perc_stumpy.png" frames="81"  />
+
+	<OptionMenu    param="23"  x="565"  y="242"  w="160" h="18"  font_size="Small" alignment="center" color_text="#CFAF89FF" transparent="0"  >	
+		<OptionItem name="Smooth Stir"          value="0.16" />
+		<OptionItem name="Regular Stir"                 value="0.5" />
+		<OptionItem name="Peaky Stir"      value="0.833" />
+	</OptionMenu>	
+
+	<!-- Controls - Little knobs -->
+
+	<StaticText x="324" y="222" w="50" h="18" text="Pan" color_text="#101D0AFF" transparent="1"   />
+	
+	<Knob param="88" x="334" y="240" image="Perc_knob.png" frames="128"  />
+
+	<StaticText x="389" y="222" w="50" h="18" text="Tune" color_text="#101D0AFF" transparent="1"   />
+	
+	<Knob param="89" x="399" y="240" image="Perc_knob.png" frames="128"  />
+
+	<StaticText x="454" y="222" w="50" h="18" text="Deaden" color_text="#101D0AFF" transparent="1"   />
+	
+	<Knob param="90" x="464" y="240" image="Perc_knob.png" frames="128"  />
+
+
+</GUI>                                                                                                                                       

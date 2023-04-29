@@ -1,0 +1,93 @@
+<GUI w="775" h="335">
+
+	<!-- Mech and perc bus GUI -->
+ 
+	<!-- Background -->
+
+ 	<StaticImage x="0" y="0" w="773" h="333" image="control_tab_noises.png" transparent="0"  />
+	
+	<!-- Controls - Effects for all -->
+
+	<StaticText x="57" y="25" w="50" h="20" text="Low cut" color_text="#101D0AFF" transparent="1"  />
+
+	<Knob param="77"  x="67" y="40" image="Perc_knob.png" frames="128"  />
+
+	<StaticText x="127" y="25" w="50" h="20" text="Crush" color_text="#101D0AFF" transparent="1"  />
+
+	<Knob param="401"  x="137" y="40" image="Perc_knob.png" frames="128"  />
+
+
+	<!-- Controls - Volumes -->
+	
+	<StaticText x="46" y="85" w="70" h="20" text="MECH NOISES" color_text="#101D0AFF" transparent="1"  />
+
+
+	<StaticText x="26" y="115" w="50" h="20" text="Close" color_text="#101D0AFF" transparent="1"  />
+	
+	<Knob param="92" x="39" y="131" image="Perc_stumpy.png" frames="81"  />
+
+	<StaticText x="86" y="115" w="50" h="20" text="Overhead" color_text="#101D0AFF" transparent="1"  />
+	
+	<Knob param="93" x="99" y="131" image="Perc_stumpy.png" frames="81"  />
+
+
+
+	<StaticText x="226" y="85" w="180" h="20" text="PERCUSSION" color_text="#101D0AFF" transparent="1"  />
+
+
+	<StaticText x="226" y="115" w="50" h="20" text="Close" color_text="#101D0AFF" transparent="1"  />
+	
+	<Knob param="95" x="239" y="131" image="Perc_stumpy.png" frames="81"  />
+
+	<StaticText x="286" y="115" w="50" h="20" text="Overhead" color_text="#101D0AFF" transparent="1"  />
+	
+	<Knob param="96" x="299" y="131" image="Perc_stumpy.png" frames="81"  />
+
+	<StaticText x="336" y="115" w="70" h="20" text="Snare btm" color_text="#101D0AFF" transparent="1"  />
+	
+	<Knob param="97" x="359" y="131" image="Perc_stumpy.png" frames="81"  />
+
+
+	<!-- Controls - Pan knobs -->
+
+	<StaticText x="519" y="80" w="180" h="20" text="PAN" color_text="#101D0AFF" transparent="1"  />
+
+	<StaticText x="459" y="115" w="50" h="18" text="Snare" color_text="#101D0AFF" transparent="1"   />
+	
+	<Knob param="88" x="469" y="140" image="Perc_knob.png" frames="128"  />
+
+	<StaticText x="509" y="115" w="50" h="18" text="Hi-hat" color_text="#101D0AFF" transparent="1"   />
+	
+	<Knob param="102" x="519" y="140" image="Perc_knob.png" frames="128"  />
+
+	<StaticText x="559" y="115" w="50" h="18" text="22 in" color_text="#101D0AFF" transparent="1"   />
+	
+	<Knob param="32" x="569" y="140" image="Perc_knob.png" frames="128"  />
+
+	<StaticText x="609" y="115" w="50" h="18" text="18 in" color_text="#101D0AFF" transparent="1"   />
+	
+	<Knob param="36" x="619" y="140" image="Perc_knob.png" frames="128"  />
+
+	<StaticText x="659" y="115" w="50" h="18" text="15 in" color_text="#101D0AFF" transparent="1"   />
+	
+	<Knob param="40" x="669" y="140" image="Perc_knob.png" frames="128"  />
+
+	<StaticText x="709" y="115" w="50" h="18" text="14 in" color_text="#101D0AFF" transparent="1"   />
+	
+	<Knob param="44" x="719" y="140" image="Perc_knob.png" frames="128"  />
+
+
+
+	<!-- Controls - Tune knobs -->
+
+	<StaticText x="59" y="222" w="50" h="18" text="Tune" color_text="#101D0AFF" transparent="1"   />
+	
+	<Knob param="94" x="69" y="240" image="Perc_knob.png" frames="128"  />
+
+	<StaticText x="286" y="222" w="50" h="18" text="Tune" color_text="#101D0AFF" transparent="1"   />
+	
+	<Knob param="98" x="299" y="240" image="Perc_knob.png" frames="128"  />
+
+
+
+</GUI>                                                                                                                                       

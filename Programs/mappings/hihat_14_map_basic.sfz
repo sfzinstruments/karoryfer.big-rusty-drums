@@ -1,0 +1,383 @@
+//Stick tip hits
+
+<master> key=$htclstkey amplitude_cc15=70 locc15=1 group=11 off_by=10
+//Hi-hat release time manupulation
+ampeg_release_oncc4=0.2
+ampeg_release_curvecc4=40
+ampeg_release=0.2
+pan_cc17=100
+tune_cc18=1200
+ampeg_hold=0.1
+ampeg_decay=0.5
+ampeg_sustain=100
+ampeg_sustain_oncc19=-100
+ampeg_sustain_curvecc19=8
+#include "mappings/hihat_14/ht_tc_cl.sfz"
+
+<master> key=$htclstkey amplitude_cc16=70 locc16=1 group=21 off_by=20
+//Hi-hat release time manupulation
+ampeg_release_oncc4=0.2
+ampeg_release_curvecc4=40
+ampeg_release=0.4
+pan_cc17=100
+tune_cc18=1200
+ampeg_hold=0.1
+ampeg_decay=0.5
+ampeg_sustain=100
+ampeg_sustain_oncc19=-100
+ampeg_sustain_curvecc19=8
+#include "mappings/hihat_14/ht_tc_oh.sfz"
+
+<master> key=$htvartkey amplitude_cc15=70 locc15=1 group=12 off_by=11
+//Hi-hat release time manupulation
+ampeg_release_oncc4=0.2
+ampeg_release_curvecc4=40
+ampeg_release=0.2
+pan_cc17=100
+tune_cc18=1200
+locc4=$ht_cl_lo hicc4=$ht_cl_hi
+ampeg_hold=0.1
+ampeg_decay=0.6
+ampeg_sustain=100
+ampeg_sustain_oncc19=-100
+ampeg_sustain_curvecc19=8
+#include "mappings/hihat_14/ht_cl_cl.sfz"
+
+<master> key=$htvartkey amplitude_cc16=70 locc16=1 group=22 off_by=21
+//Hi-hat release time manupulation
+ampeg_release_oncc4=0.2
+ampeg_release_curvecc4=40
+ampeg_release=0.4
+pan_cc17=100
+tune_cc18=1200
+locc4=$ht_cl_lo hicc4=$ht_cl_hi
+ampeg_hold=0.1
+ampeg_decay=0.6
+ampeg_sustain=100
+ampeg_sustain_oncc19=-100
+ampeg_sustain_curvecc19=8
+#include "mappings/hihat_14/ht_cl_oh.sfz"
+
+<master> key=$htvartkey amplitude_cc15=70 locc15=1 group=13 off_by=12
+//Hi-hat release time manupulation
+ampeg_release_oncc4=0.2
+ampeg_release_curvecc4=40
+ampeg_release=0.2
+pan_cc17=100
+tune_cc18=1200
+locc4=$ht_lc_lo hicc4=$ht_lc_hi
+ampeg_hold=0.1
+ampeg_decay=0.8
+ampeg_sustain=100
+ampeg_sustain_oncc19=-100
+ampeg_sustain_curvecc19=8
+#include "mappings/hihat_14/ht_lc_cl.sfz"
+
+<master> key=$htvartkey amplitude_cc16=70 locc16=1 group=23 off_by=22
+//Hi-hat release time manupulation
+ampeg_release_oncc4=0.2
+ampeg_release_curvecc4=40
+ampeg_release=0.4
+pan_cc17=100
+tune_cc18=1200
+locc4=$ht_lc_lo hicc4=$ht_lc_hi
+ampeg_hold=0.1
+ampeg_decay=0.8
+ampeg_sustain=100
+ampeg_sustain_oncc19=-100
+ampeg_sustain_curvecc19=8
+#include "mappings/hihat_14/ht_lc_oh.sfz"
+
+<master> key=$htvartkey amplitude_cc15=70 locc15=1 group=14 off_by=13
+//Hi-hat release time manupulation
+ampeg_release_oncc4=0.2
+ampeg_release_curvecc4=40
+ampeg_release=0.2
+pan_cc17=100
+tune_cc18=1200
+locc4=$ht_qo_lo hicc4=$ht_qo_hi
+ampeg_hold=0.1
+ampeg_decay=1.0
+ampeg_sustain=100
+ampeg_sustain_oncc19=-100
+ampeg_sustain_curvecc19=8
+#include "mappings/hihat_14/ht_qo_cl.sfz"
+
+<master> key=$htvartkey amplitude_cc16=70 locc16=1 group=24 off_by=23
+//Hi-hat release time manupulation
+ampeg_release_oncc4=0.2
+ampeg_release_curvecc4=40
+ampeg_release=0.4
+pan_cc17=100
+tune_cc18=1200
+locc4=$ht_qo_lo hicc4=$ht_qo_hi
+ampeg_hold=0.1
+ampeg_decay=1.0
+ampeg_sustain=100
+ampeg_sustain_oncc19=-100
+ampeg_sustain_curvecc19=8
+#include "mappings/hihat_14/ht_qo_oh.sfz"
+
+<master> key=$htvartkey amplitude_cc15=70 locc15=1 group=15 off_by=14
+//Hi-hat release time manupulation
+ampeg_release_oncc4=0.2
+ampeg_release_curvecc4=40
+ampeg_release=0.2
+pan_cc17=100
+tune_cc18=1200
+locc4=$ht_ho_lo hicc4=$ht_ho_hi
+ampeg_hold=0.1
+ampeg_decay=1.8
+ampeg_sustain=100
+ampeg_sustain_oncc19=-100
+ampeg_sustain_curvecc19=8
+amplitude_cc4=100
+amplitude_curvecc4=33
+amplitude_smoothcc4=150
+#include "mappings/hihat_14/ht_ho_cl.sfz"
+
+<master> key=$htvartkey amplitude_cc16=70 locc16=1 group=25 off_by=24
+//Hi-hat release time manupulation
+ampeg_release_oncc4=0.2
+ampeg_release_curvecc4=40
+ampeg_release=0.4
+pan_cc17=100
+tune_cc18=1200
+locc4=$ht_ho_lo hicc4=$ht_ho_hi
+ampeg_hold=0.1
+ampeg_decay=1.8
+ampeg_sustain=100
+ampeg_sustain_oncc19=-100
+ampeg_sustain_curvecc19=8
+amplitude_cc4=100
+amplitude_curvecc4=33
+amplitude_smoothcc4=150
+#include "mappings/hihat_14/ht_ho_oh.sfz"
+
+<master> key=$htvartkey amplitude_cc15=70 locc15=1 group=16 off_by=15
+//Hi-hat release time manupulation
+ampeg_release_oncc4=0.2
+ampeg_release_curvecc4=40
+ampeg_release=0.2
+pan_cc17=100
+tune_cc18=1200
+locc4=$ht_open_lo hicc4=$ht_open_hi
+ampeg_hold=0.1
+ampeg_decay=4.3
+ampeg_sustain=100
+ampeg_sustain_oncc19=-100
+ampeg_sustain_curvecc19=8
+amplitude_cc4=100
+amplitude_curvecc4=34
+amplitude_smoothcc4=150
+#include "mappings/hihat_14/ht_open_cl.sfz"
+
+<master> key=$htvartkey amplitude_cc16=70 locc16=1 group=26 off_by=25
+//Hi-hat release time manupulation
+ampeg_release_oncc4=0.2
+ampeg_release_curvecc4=40
+ampeg_release=0.4
+pan_cc17=100
+tune_cc18=1200
+locc4=$ht_open_lo hicc4=$ht_open_hi
+ampeg_hold=0.1
+ampeg_decay=4.3
+ampeg_sustain=100
+ampeg_sustain_oncc19=-100
+ampeg_sustain_curvecc19=8
+amplitude_cc4=100
+amplitude_curvecc4=34
+amplitude_smoothcc4=150
+#include "mappings/hihat_14/ht_open_oh.sfz"
+
+//Stick shank hits
+
+<master> key=$htclsskey amplitude_cc15=70 locc15=1 group=11 off_by=10
+//Hi-hat release time manupulation
+ampeg_release_oncc4=0.2
+ampeg_release_curvecc4=40
+ampeg_release=0.2
+pan_cc17=100
+tune_cc18=1200
+ampeg_hold=0.1
+ampeg_decay=0.5
+ampeg_sustain=100
+ampeg_sustain_oncc19=-100
+ampeg_sustain_curvecc19=8
+#include "mappings/hihat_14/ht_tc_s_cl.sfz"
+
+<master> key=$htclsskey amplitude_cc16=70 locc16=1 group=21 off_by=20
+//Hi-hat release time manupulation
+ampeg_release_oncc4=0.2
+ampeg_release_curvecc4=40
+ampeg_release=0.4
+pan_cc17=100
+tune_cc18=1200
+ampeg_hold=0.1
+ampeg_decay=0.5
+ampeg_sustain=100
+ampeg_sustain_oncc19=-100
+ampeg_sustain_curvecc19=8
+#include "mappings/hihat_14/ht_tc_s_oh.sfz"
+
+<master> key=$htvarskey amplitude_cc15=70 locc15=1 group=12 off_by=11
+//Hi-hat release time manupulation
+ampeg_release_oncc4=0.2
+ampeg_release_curvecc4=40
+ampeg_release=0.2
+pan_cc17=100
+tune_cc18=1200
+locc4=$ht_cl_lo hicc4=$ht_cl_hi
+ampeg_hold=0.1
+ampeg_decay=0.6
+ampeg_sustain=100
+ampeg_sustain_oncc19=-100
+ampeg_sustain_curvecc19=8
+#include "mappings/hihat_14/ht_cl_s_cl.sfz"
+
+<master> key=$htvarskey amplitude_cc16=70 locc16=1 group=22 off_by=21
+//Hi-hat release time manupulation
+ampeg_release_oncc4=0.2
+ampeg_release_curvecc4=40
+ampeg_release=0.4
+pan_cc17=100
+tune_cc18=1200
+locc4=$ht_cl_lo hicc4=$ht_cl_hi
+ampeg_hold=0.1
+ampeg_decay=0.6
+ampeg_sustain=100
+ampeg_sustain_oncc19=-100
+ampeg_sustain_curvecc19=8
+#include "mappings/hihat_14/ht_cl_s_oh.sfz"
+
+<master> key=$htvarskey amplitude_cc15=70 locc15=1 group=13 off_by=12
+//Hi-hat release time manupulation
+ampeg_release_oncc4=0.2
+ampeg_release_curvecc4=40
+ampeg_release=0.2
+pan_cc17=100
+tune_cc18=1200
+locc4=$ht_lc_lo hicc4=$ht_lc_hi
+ampeg_hold=0.1
+ampeg_decay=0.8
+ampeg_sustain=100
+ampeg_sustain_oncc19=-100
+ampeg_sustain_curvecc19=8
+#include "mappings/hihat_14/ht_lc_s_cl.sfz"
+
+<master> key=$htvarskey amplitude_cc16=10 group=23 off_by=22
+//Hi-hat release time manupulation
+ampeg_release_oncc4=0.2
+ampeg_release_curvecc4=40
+ampeg_release=0.4
+pan_cc17=100
+tune_cc18=1200
+locc4=$ht_lc_lo hicc4=$ht_lc_hi
+ampeg_hold=0.1
+ampeg_decay=0.8
+ampeg_sustain=100
+ampeg_sustain_oncc19=-100
+ampeg_sustain_curvecc19=8
+#include "mappings/hihat_14/ht_lc_s_oh.sfz"
+
+<master> key=$htvarskey amplitude_cc15=70 locc15=1 group=14 off_by=13
+//Hi-hat release time manupulation
+ampeg_release_oncc4=0.2
+ampeg_release_curvecc4=40
+ampeg_release=0.2
+pan_cc17=100
+tune_cc18=1200
+locc4=$ht_qo_lo hicc4=$ht_qo_hi
+ampeg_hold=0.1
+ampeg_decay=1.0
+ampeg_sustain=100
+ampeg_sustain_oncc19=-100
+ampeg_sustain_curvecc19=8
+#include "mappings/hihat_14/ht_qo_s_cl.sfz"
+
+<master> key=$htvarskey amplitude_cc16=70 locc16=1 group=24 off_by=23
+//Hi-hat release time manupulation
+ampeg_release_oncc4=0.2
+ampeg_release_curvecc4=40
+ampeg_release=0.4
+pan_cc17=100
+tune_cc18=1200
+locc4=$ht_qo_lo hicc4=$ht_qo_hi
+ampeg_hold=0.1
+ampeg_decay=1.0
+ampeg_sustain=100
+ampeg_sustain_oncc19=-100
+ampeg_sustain_curvecc19=8
+#include "mappings/hihat_14/ht_qo_s_oh.sfz"
+
+<master> key=$htvarskey amplitude_cc15=70 locc15=1 group=15 off_by=14
+//Hi-hat release time manupulation
+ampeg_release_oncc4=0.2
+ampeg_release_curvecc4=40
+ampeg_release=0.2
+pan_cc17=100
+tune_cc18=1200
+locc4=$ht_ho_lo hicc4=$ht_ho_hi
+ampeg_hold=0.1
+ampeg_decay=1.8
+ampeg_sustain=100
+ampeg_sustain_oncc19=-100
+ampeg_sustain_curvecc19=8
+amplitude_cc4=100
+amplitude_curvecc4=33
+amplitude_smoothcc4=150
+#include "mappings/hihat_14/ht_ho_cl.sfz"
+
+<master> key=$htvarskey amplitude_cc16=70 locc16=1 group=25 off_by=24
+//Hi-hat release time manupulation
+ampeg_release_oncc4=0.2
+ampeg_release_curvecc4=40
+ampeg_release=0.4
+pan_cc17=100
+tune_cc18=1200
+locc4=$ht_ho_lo hicc4=$ht_ho_hi
+ampeg_hold=0.1
+ampeg_decay=1.8
+ampeg_sustain=100
+ampeg_sustain_oncc19=-100
+ampeg_sustain_curvecc19=8
+amplitude_cc4=100
+amplitude_curvecc4=33
+amplitude_smoothcc4=150
+#include "mappings/hihat_14/ht_ho_oh.sfz"
+
+<master> key=$htvarskey amplitude_cc15=70 locc15=1 group=16 off_by=15
+//Hi-hat release time manupulation
+ampeg_release_oncc4=0.2
+ampeg_release_curvecc4=40
+ampeg_release=0.2
+pan_cc17=100
+tune_cc18=1200
+locc4=$ht_open_lo hicc4=$ht_open_hi
+ampeg_hold=0.1
+ampeg_decay=4.3
+ampeg_sustain=100
+ampeg_sustain_oncc19=-100
+ampeg_sustain_curvecc19=8
+amplitude_cc4=100
+amplitude_curvecc4=34
+amplitude_smoothcc4=150
+#include "mappings/hihat_14/ht_open_cl.sfz"
+
+<master> key=$htvarskey amplitude_cc16=70 locc16=1 group=26 off_by=25
+//Hi-hat release time manupulation
+ampeg_release_oncc4=0.2
+ampeg_release_curvecc4=40
+ampeg_release=0.4
+pan_cc17=100
+tune_cc18=1200
+locc4=$ht_open_lo hicc4=$ht_open_hi
+ampeg_hold=0.1
+ampeg_decay=4.3
+ampeg_sustain=100
+ampeg_sustain_oncc19=-100
+ampeg_sustain_curvecc19=8
+amplitude_cc4=100
+amplitude_curvecc4=34
+amplitude_smoothcc4=150
+#include "mappings/hihat_14/ht_open_oh.sfz"

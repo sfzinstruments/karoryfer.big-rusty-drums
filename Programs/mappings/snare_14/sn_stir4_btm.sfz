@@ -1,0 +1,14 @@
+<region>
+sample=../Samples/snare_14/bstir/btm/sn_stir_dl4_rr1.wav
+
+<region>
+sample=../Samples/snare_14/bstir/btm/sn_stir_dl4_rr2.wav
+seq_position=2
+
+<region>
+sample=../Samples/snare_14/bstir/btm/sn_stir_dl4_rr3.wav
+seq_position=3
+
+<region>
+sample=../Samples/snare_14/bstir/btm/sn_stir_dl4_rr4.wav
+seq_position=4

@@ -1,0 +1,58 @@
+//Hits on middle layer
+
+<master>
+key=$stmidkey
+amplitude_cc124=44
+locc124=1
+pan_cc126=100
+tune_cc127=1200
+ampeg_hold=0.1
+ampeg_decay=0.8
+ampeg_sustain=100
+ampeg_sustain_oncc121=-100
+ampeg_sustain_curvecc121=8
+#include "mappings/stack_3_layer/st_mid_cl.sfz"
+
+<master>
+key=$stmidkey
+amplitude_cc125=44
+locc125=1
+pan_cc126=100
+pan_curvecc126=20
+tune_cc127=1200
+ampeg_hold=0.1
+ampeg_decay=0.8
+ampeg_sustain=100
+ampeg_sustain_oncc121=-100
+ampeg_sustain_curvecc121=8
+#include "mappings/stack_3_layer/st_mid_oh.sfz"
+
+
+//Edge hits
+
+<master>
+key=$stedkey
+amplitude_cc124=44
+locc124=1
+pan_cc126=100
+tune_cc127=1200
+ampeg_hold=0.1
+ampeg_decay=0.9
+ampeg_sustain=100
+ampeg_sustain_oncc121=-100
+ampeg_sustain_curvecc121=8
+#include "mappings/stack_3_layer/st_ed_cl.sfz"
+
+<master>
+key=$stedkey
+amplitude_cc125=44
+locc125=1
+pan_cc126=100
+pan_curvecc126=20
+tune_cc127=1200
+ampeg_hold=0.1
+ampeg_decay=0.9
+ampeg_sustain=100
+ampeg_sustain_oncc121=-100
+ampeg_sustain_curvecc121=8
+#include "mappings/stack_3_layer/st_ed_oh.sfz"

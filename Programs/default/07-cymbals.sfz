@@ -1,0 +1,105 @@
+<control>
+//Key assignments
+#include "keymap/keymap.sfz"
+
+
+//Stick, brush and mallet selections
+label_cc28=Cymbal sticking
+//Kick controls
+label_cc77=Low cut
+//Cymbal controls
+label_cc100=Crash close
+label_cc101=Crash OH
+label_cc102=Crash pan
+label_cc104=Ride close
+label_cc105=Ride OH
+label_cc106=Ride pan
+label_cc108=China close
+label_cc109=China OH
+label_cc110=China pan
+label_cc112=Sizzle ride close
+label_cc113=Sizzle ride OH
+label_cc114=Sizzle ride pan
+label_cc116=Sizzle crash close
+label_cc117=Sizzle crash OH
+label_cc118=Sizzle crash pan
+label_cc120=Cymbal tune
+label_cc121=Cymbal dryness
+label_cc124=Stack close
+label_cc125=Stack OH
+label_cc126=Stack pan
+//Effects
+label_cc400=Limiter thresh
+label_cc401=Limiter level
+	
+//Cymbals
+set_cc100=40
+set_cc101=100
+set_cc102=30
+set_cc104=40
+set_cc105=100
+set_cc106=97
+set_cc108=40
+set_cc109=100
+set_cc110=50
+set_cc112=40
+set_cc113=100
+set_cc114=77
+set_cc116=40
+set_cc117=100
+set_cc118=53
+set_cc120=63
+set_cc124=40
+set_cc125=100
+set_cc126=73
+//Effects
+set_cc400=63
+set_cc401=63
+
+<global> loop_mode=one_shot
+seq_length=4
+off_mode=normal
+ampeg_release=0.01
+bend_down=1200
+bend_up=1200
+//The non-kick low cut
+eq1_freq=50
+eq1_bw=4
+eq1_gain_oncc77=-18
+//Default tune and pan curves
+pan_curvecc102=9
+pan_curvecc106=9
+pan_curvecc110=9
+pan_curvecc114=9
+pan_curvecc118=9
+pan_curvecc126=9
+tune_curvecc120=9
+//Make the bottom velocity layer not quite so whisper-quiet at the bottom
+amp_velcurve_1=0.4
+
+//Cymbals
+#include "mappings/ride_22_map.sfz"
+#include "mappings/crash_17_map.sfz"
+#include "mappings/china_18_map.sfz"
+#include "mappings/ride_sizzle_19_map.sfz"
+#include "mappings/crash_sizzle_17_map.sfz"
+#include "mappings/stack_3_layer_map.sfz"
+#include "mappings/ride_22_map_brush.sfz"
+#include "mappings/crash_17_map_brush.sfz"
+#include "mappings/china_18_map_brush.sfz"
+#include "mappings/ride_sizzle_19_map_brush.sfz"
+#include "mappings/crash_sizzle_17_map_brush.sfz"
+#include "mappings/ride_22_map_mallet.sfz"
+#include "mappings/crash_17_map_mallet.sfz"
+#include "mappings/china_18_map_mallet.sfz"
+#include "mappings/ride_sizzle_19_map_mallet.sfz"
+#include "mappings/crash_sizzle_17_map_mallet.sfz"
+
+<effect>
+param_offset=400
+type=com.mda.Limiter
+
+//Curves
+#include "mappings/curves/mute_curves.sfz"
+#include "mappings/curves/tune_curve.sfz"
+#include "mappings/curves/cym_pan_curves.sfz"

@@ -1,0 +1,16 @@
+<curve>curve_index=33
+v000=0.13
+v037=0.8
+v077=1
+v127=1
+
+<curve>curve_index=34
+v000=0.1
+v037=0.7
+v077=1
+v127=1
+
+<curve>curve_index=40
+v000=0
+v063=0.25
+v127=1

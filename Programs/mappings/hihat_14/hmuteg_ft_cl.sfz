@@ -1,0 +1,23 @@
+<group> group=18
+//The range which mutes hi-hat pedal return noises
+//Everything except themselves
+sample=*silence
+loop_mode=loop_continuous off_mode=fast
+ampeg_attack=0 ampeg_decay=0 ampeg_sustain=0 ampeg_release=0
+off_by=17
+<region> key=$htchkkey
+<region> key=$htsplkey
+
+<group> group=17
+//The range which mutes footsplashes
+//Everything except pedal return noises
+//Footsplashes are the only articulation which mutes itself
+//Splash also mutes splash, but key=$htsplkey is not part of this silence group
+//Instead splash regions themselves are marked with group=17 also
+//Kind of a kludge, but keeps the silence from instantly muting the splash
+//while allowing a subsequent splash to mute the current splash
+sample=*silence
+loop_mode=loop_continuous off_mode=fast
+ampeg_attack=0 ampeg_decay=0 ampeg_sustain=0 ampeg_release=0
+off_by=17
+<region> key=$htchkkey

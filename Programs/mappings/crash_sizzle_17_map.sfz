@@ -1,0 +1,147 @@
+//Ride-style bow hits
+
+<master>
+key=$crsrdkey
+amplitude_cc116=60
+locc116=1
+hicc28=63
+pan_cc118=100
+tune_cc120=1200
+seq_length=3
+group=110
+off_by=113
+polyphony=5
+ampeg_release=0.3
+ampeg_hold=0.1
+ampeg_decay=5.0
+ampeg_sustain=100
+ampeg_sustain_oncc121=-100
+ampeg_sustain_curvecc121=8
+#include "mappings/crash_sizzle_17/crs_rd_cl.sfz"
+
+<master>
+key=$crsrdkey
+amplitude_cc117=60
+locc117=1
+hicc28=63
+pan_cc118=100
+pan_curvecc118=19
+tune_cc120=1200
+seq_length=3
+group=120
+off_by=123
+polyphony=5
+ampeg_release=0.3
+ampeg_hold=0.1
+ampeg_decay=5.0
+ampeg_sustain=100
+ampeg_sustain_oncc121=-100
+ampeg_sustain_curvecc121=8
+#include "mappings/crash_sizzle_17/crs_rd_oh.sfz"
+
+//Bell hits
+
+<master>
+key=$crsblkey
+amplitude_cc116=60
+locc116=1
+hicc28=63
+pan_cc118=100
+tune_cc120=1200
+group=111
+off_by=113
+polyphony=4
+ampeg_release=0.3
+ampeg_hold=0.1
+ampeg_decay=4.0
+ampeg_sustain=100
+ampeg_sustain_oncc121=-100
+ampeg_sustain_curvecc121=8
+#include "mappings/crash_sizzle_17/crs_bl_cl.sfz"
+
+<master>
+key=$crsblkey
+amplitude_cc117=60
+locc117=1
+hicc28=63
+pan_cc118=100
+pan_curvecc118=19
+tune_cc120=1200
+group=121
+off_by=123
+polyphony=4
+ampeg_release=0.3
+ampeg_hold=0.1
+ampeg_decay=4.0
+ampeg_sustain=100
+ampeg_sustain_oncc121=-100
+ampeg_sustain_curvecc121=8
+#include "mappings/crash_sizzle_17/crs_bl_oh.sfz"
+
+//Regular crashes
+
+<master>
+key=$crscrkey
+amplitude_cc116=60
+locc116=1
+hicc28=63
+pan_cc118=100
+tune_cc120=1200
+group=112
+off_by=113
+polyphony=6
+ampeg_release=0.3
+ampeg_hold=0.1
+ampeg_decay=5.0
+ampeg_sustain=100
+ampeg_sustain_oncc121=-100
+ampeg_sustain_curvecc121=8
+#include "mappings/crash_sizzle_17/crs_cr_cl.sfz"
+
+<master>
+key=$crscrkey
+amplitude_cc117=60
+locc117=1
+hicc28=63
+pan_cc118=100
+pan_curvecc118=19
+tune_cc120=1200
+group=122
+off_by=123
+polyphony=6
+ampeg_release=0.3
+ampeg_hold=0.1
+ampeg_decay=5.0
+ampeg_sustain=100
+ampeg_sustain_oncc121=-100
+ampeg_sustain_curvecc121=8
+#include "mappings/crash_sizzle_17/crs_cr_oh.sfz"
+
+//Edge chokes
+
+<master>
+key=$crschkey
+amplitude_cc116=30
+locc116=1
+hicc28=63
+pan_cc118=100
+tune_cc120=1200
+ampeg_attack=0.15
+group=113
+//For chokes, make very low velocities quite quiet
+amp_velcurve_1=0.03
+#include "mappings/crash_sizzle_17/crs_choke_cl.sfz"
+
+<master>
+key=$crschkey
+amplitude_cc117=30
+locc117=1
+hicc28=63
+pan_cc118=100
+pan_curvecc118=19
+tune_cc120=1200
+ampeg_attack=0.15
+group=123
+//For chokes, make very low velocities quite quiet
+amp_velcurve_1=0.03
+#include "mappings/crash_sizzle_17/crs_choke_oh.sfz"

@@ -1,0 +1,21 @@
+//Hits on the shaft
+
+<master>
+key=$htperckey
+amplitude_cc95=100
+locc95=1
+tune_cc98=2400
+pan_cc17=100
+//Make the bottom velocity layer not quite so whisper-quiet at the bottom
+amp_velcurve_1=0.2
+#include "mappings/hihat_14/ht_perc_cl.sfz"
+
+<master>
+key=$htperckey
+amplitude_cc96=100
+locc96=1
+tune_cc98=2400
+pan_cc17=100
+//Make the bottom velocity layer not quite so whisper-quiet at the bottom
+amp_velcurve_1=0.2
+#include "mappings/hihat_14/ht_perc_oh.sfz"
